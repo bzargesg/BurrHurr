@@ -1,12 +1,44 @@
 import React from 'react';
-import ListItem from './ListItem.jsx';
+import {
+  ListWrapper,
+  ListTable,
+  ListTableHeader,
+  Ltd
+} from '../Styled/styledComps.jsx';
+class Fermentables extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+ 
+    var i = 0;
+    return (
+      <div>
+        <ListWrapper>
+          <h4> Fermentables: </h4>
+          <ListTable>
+            <tr>
+              <ListTableHeader>#</ListTableHeader>
+              <ListTableHeader>Fermentable Name</ListTableHeader>
+              <ListTableHeader>Amount</ListTableHeader>
+              <ListTableHeader>Color</ListTableHeader>
+              <ListTableHeader>Gravity Contribution</ListTableHeader>
+              <ListTableHeader>ABV contribution</ListTableHeader>
+              <ListTableHeader>% of grist</ListTableHeader>
+            </tr>
+            {this.props.fermentables.map(fermentable =>{
+              return (<tr>
+                {Object.keys(fermentable).map(fermentableProperty=>{
+                  return (<Ltd>{fermentable[fermentableProperty]}</Ltd>)
+                })}
+              </tr>)
+            })}
+          </ListTable>
+      
+        </ListWrapper>
+      </div>
+    );
+  }
 
-const List = (props) => (
-  <div>
-    <h4> List Component </h4>
-    There are { props.items.length } items.
-    { props.items.map(item => <ListItem item={item}/>)}
-  </div>
-)
-
-export default List;
+}
+export default Fermentables;
