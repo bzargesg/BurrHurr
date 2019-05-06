@@ -6,7 +6,9 @@ module.exports = (sequelize, DataTypes) => {
     temp: DataTypes.DECIMAL
   }, {});
   fermentation_profiles.associate = function(models) {
-    // associations can be defined here
+    fermentation_profiles.hasMany(models.recipes, {
+      foreignKey: 'fermentationID'
+    })
   };
   return fermentation_profiles;
 };

@@ -19,6 +19,9 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   water_profiles.associate = function(models) {
     // associations can be defined here
+    water_profiles.hasMany(models.recipes, {
+      foreignKey: 'waterID'
+    })
   };
   return water_profiles;
 };

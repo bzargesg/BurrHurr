@@ -13,7 +13,11 @@ module.exports = (sequelize, DataTypes) => {
     notes: DataTypes.STRING
   }, {});
   fermentables.associate = function(models) {
-    // associations can be defined here
+    fermentables.belongsToMany(models.recipes,{
+      through: 'ferm_rec',
+      foreignKey: 'fermentablesID',
+      otherKey: 'recipesID'
+    })
   };
   return fermentables;
 };

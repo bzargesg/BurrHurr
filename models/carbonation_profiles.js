@@ -7,7 +7,9 @@ module.exports = (sequelize, DataTypes) => {
     notes: DataTypes.STRING
   }, {});
   carbonation_profiles.associate = function(models) {
-    // associations can be defined here
+    carbonation_profiles.hasMany(models.recipes, {
+      foreignKey: 'carbonationID'
+    })
   };
   return carbonation_profiles;
 };
