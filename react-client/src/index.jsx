@@ -1,34 +1,40 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import $ from 'jquery';
-import List from './components/List.jsx';
+import Fermentables from './components/Fermentables.jsx';
+import Hops from './components/Hops.jsx';
+import Yeast from './components/Yeast.jsx';
+import Kettle from './components/Kettle.jsx';
+import Style from './components/Style.jsx';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = { 
-      items: []
+      volume: '0L',
+      color: 0,
+      IBU: 0,
+      ABV: 0,
     }
   }
 
   componentDidMount() {
-    $.ajax({
-      url: '/items', 
-      success: (data) => {
-        this.setState({
-          items: data
-        })
-      },
-      error: (err) => {
-        console.log('err', err);
-      }
-    });
+
   }
 
   render () {
     return (<div>
-      <h1>Item List</h1>
-      <List items={this.state.items}/>
+      <h1>BurrHurr</h1>
+      <div className='headerBar'>
+      <span className="volume">Volume: {this.state.volume}</span>
+      <span className="color">Color: {this.state.color}</span>
+      <span className="ibu">IBU: {this.state.IBU}</span>
+      <span className="abv">ABV: {this.state.ABV}</span>
+      </div>
+      <Fermentables/>
+      <Hops/>
+      <Yeast/>
+      <Kettle/>
+      <Style/>
     </div>)
   }
 }

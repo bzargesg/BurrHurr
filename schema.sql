@@ -219,6 +219,17 @@ description varchar
 PRIMARY KEY
 (ID)
 );
+CREATE TABLE mash_profiles
+(
+ID int NOT NULL
+AUTO_INCREMENT,
+NAME varchar(50),
+PURPOSE varchar(50),
+description varchar
+(50) NOT NULL,
+PRIMARY KEY
+(ID)
+);
 /*  Execute this file from the command line by typing:
 *    mysql -u root < server/schema.sql
 *  to create the database and the tables.*/
