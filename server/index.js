@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 var items = require('../database-mysql');
 var routes = require('./routes/routes.js');
 var app = express();
-var PORT = env.process.PORT || 3000;
+var PORT = process.env.PORT || 3000;
 
 // UNCOMMENT FOR REACT
 app.use(express.static(__dirname + '/../react-client/dist'));
