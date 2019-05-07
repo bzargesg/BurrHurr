@@ -1,11 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Popup from 'reactjs-popup';
+import TopBar from './components/TopBar.jsx'
+import {  SubmissionButton,
+  SubmissionButtonClicked} from './Styled/styledComps.jsx'
 import Fermentables from './components/Fermentables.jsx';
 import Hops from './components/Hops.jsx';
 import Yeast from './components/Yeast.jsx';
 import Kettle from './components/Kettle.jsx';
 import Style from './components/Style.jsx';
-
+import { BodyWrapp } from './Styled/styledComps.jsx';
+import FermentablePopup from './components/PopupMenu/FermentablePopup.jsx';
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -14,15 +19,42 @@ class App extends React.Component {
       color: 0,
       IBU: 0,
       ABV: 0,
+      yeasts: [],
+      kettle: [],
+      yeasts: [],
+      styles: [],
+      fermentables: [{number: 1, name:'2-row', amount: '5lb', color: '40 L', gravity: '1.040-1.046',abv: '4-5%', percentage: '5%'}],
+      hops: [],
+      buttonClick: false,
     }
+    this.fermClickHandler = this.fermClickHandler.bind(this);
   }
 
   componentDidMount() {
 
   }
-
+fermClickHandler(e){
+  this.setState({fermclick: true});
+}
   render () {
-    return (<div>
+    var button;
+    if (this.state.buttonClick) {
+      button = (
+        <SubmissionButtonClicked onClick={this.clickHandler.bind(this)}>
+          Add Fermentable
+        </SubmissionButtonClicked>
+      );
+    } else {
+      button = (
+        <SubmissionButton onClick={this.clickHandler.bind(this)}>
+          Add Fermentable
+        </SubmissionButton>
+      );
+    }
+    return (
+    <div style={{backgroundColor: '#efe2ba'}}>
+      <TopBar/>
+      <BodyWrapp>
       <h1>BurrHurr</h1>
       <div className='headerBar'>
       <span className="volume">Volume: {this.state.volume}</span>
@@ -30,12 +62,20 @@ class App extends React.Component {
       <span className="ibu">IBU: {this.state.IBU}</span>
       <span className="abv">ABV: {this.state.ABV}</span>
       </div>
-      <Fermentables/>
-      <Hops/>
+      <Fermentables fermentables={this.state.fermentables} clickHandler={this.fermClickHandler}/>
+      <Popup trigger={button} modal closeOnDocumentClick><div className="modal"><FermentablePopup/></div></Popup>
+      {/* <Hops/>
       <Yeast/>
       <Kettle/>
-      <Style/>
+      <Style/> */}
+      </BodyWrapp>
     </div>)
+  }
+  clickHandler(e) {
+    this.setState({ buttonClick: !this.state.buttonClick });
+    setTimeout(() => {
+      this.setState({ buttonClick: false });
+    }, 100);
   }
 }
 
