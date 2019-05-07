@@ -10,13 +10,13 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   recipes.associate = function(models) {
     // associations can be defined here
-    recipes.belongsTo(models.water_profile, {
+    recipes.belongsTo(models.water_profiles, {
       foreignKey: 'waterID',
     });
-    recipes.belongsTo(models.fermentation_profile, {
+    recipes.belongsTo(models.fermentation_profiles, {
       foreignKey: 'fermentationID',
     })
-    recipes.belongsTo(models.carbonation_profile, {
+    recipes.belongsTo(models.carbonation_profiles, {
       foreignKey: 'carbonationID',
     })
     recipes.belongsTo(models.mash_profile, {
@@ -24,8 +24,13 @@ module.exports = (sequelize, DataTypes) => {
     })
     recipes.belongsToMany(models.fermentables,{
       through: 'ferm_rec',
-      otherKey: 'recipesID',
-      foreignKey: 'fermentablesID'
+      otherKey: 'fermentablesID',
+      foreignKey: 'recipesID'
+    })
+    recipes.belongsToMany(models.hops,{
+      through: 'ferm_rec',
+      otherKey: 'hopsID',
+      foreignKey: 'recipesID'
     })
   };
   return recipes;
