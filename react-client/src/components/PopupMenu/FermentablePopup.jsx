@@ -1,6 +1,6 @@
 import React from 'react';
 import popup from 'reactjs-popup';
-import FermentableListItem from './FermentableListItem.jsx'
+import FermentableListItem from './FermentableListItem.jsx';
 import {
   ListTable,
   ListWrapper,
@@ -23,7 +23,8 @@ class FermentablePopup extends React.Component {
       extract_differential: '',
       extract_fine_grind: '',
       extract_coarse_grind: '',
-      notes: ''
+      notes: '',
+      additionSet: {}
     };
     this.addFermentableToDB = this.addFermentableToDB.bind(this);
     this.changeField = this.changeField.bind(this);
@@ -32,7 +33,7 @@ class FermentablePopup extends React.Component {
   componentDidMount() {
     this.updateList();
   }
-  updateList(){
+  updateList() {
     let options = {
       method: 'GET',
       headers: {
@@ -75,10 +76,10 @@ class FermentablePopup extends React.Component {
       },
       body: JSON.stringify(fermentableToInsert)
     };
-    fetch('/burrhurr/fermentables',options).then(()=>{
+    fetch('/burrhurr/fermentables', options).then(() => {
       this.updateList();
       this.setState({ newFermentableClick: !this.state.newFermentableClick });
-    })
+    });
   }
 
   changeField(e) {
@@ -96,8 +97,15 @@ class FermentablePopup extends React.Component {
     }
     this.setState(fieldObj);
   }
-  rowClick(stuff){
-    console.log(stuff);
+  rowClick(clickedRow) {
+    var testObj=this.state.additionSet;
+    if (testObj[clickedRow.id]) {
+      delete testObj[clickedRow.id];
+      this.setState({ additionSet: testObj});
+    } else {
+      testObj[clickedRow.id]=clickedRow;
+      this.setState({ additionSet: testObj });
+    }
   }
   render() {
     let body;
@@ -117,7 +125,12 @@ class FermentablePopup extends React.Component {
             <ListTableHeader>Notes</ListTableHeader>
           </tr>
           {this.state.fermentablesList.map(fermentable => {
-            return <FermentableListItem fermentableItem={fermentable} rowClick={this.rowClick}/>;
+            return (
+              <FermentableListItem
+                fermentableItem={fermentable}
+                rowClick={this.rowClick}
+              />
+            );
           })}
         </ListTable>
       );
