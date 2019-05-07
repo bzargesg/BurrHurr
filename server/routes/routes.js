@@ -3,16 +3,37 @@ const model = require('../models/models.js');
 
 //get fermentables
 router.get('/fermentables',(req,res)=>{
-  model.fermentables.get();
+  model.fermentables.get()
+  .then(response=>{
+    res.json(response)
+  })
 });
 router.put('/fermentables',(req,res)=>{
-  model.fermentables.put();
+  // console.log('put fermentables',req.body);
+  // model.fermentables.post(req.body)
+  // .then(response =>{
+  //   console.log(response)
+  //   res.end()
+  // })
 });
 router.post('/fermentables',(req,res)=>{
-  model.fermentables.post();
+  console.log('post fermentables',req.body);
+  model.fermentables.post(req.body)
+  .then(response =>{
+    console.log(response)
+    res.end()
+  })
 });
 router.delete('/fermentables',(req,res)=>{
-  model.fermentables.delete();
+  console.log('delete:',req.body)
+  model.fermentables.delete(req.body.id)
+  .then(()=>{
+    console.log('successfully deleted record');
+    res.end();
+  }).catch(err=>{
+    console.log('record does not exist');
+    res.end();  
+  })
 });
 
 // get hops

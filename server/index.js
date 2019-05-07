@@ -1,9 +1,8 @@
 var express = require('express');
-var bodyParser = require('body-parser');
-// UNCOMMENT THE DATABASE YOU'D LIKE TO USE
 var items = require('../database-mysql');
 var routes = require('./routes/routes.js');
 var app = express();
+app.use(express.json());
 var PORT = process.env.PORT || 3000;
 
 // UNCOMMENT FOR REACT
