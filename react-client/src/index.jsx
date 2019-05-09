@@ -9,6 +9,8 @@ import Hops from './components/Hops.jsx';
 import Yeast from './components/Yeast.jsx';
 import Kettle from './components/Kettle.jsx';
 import Style from './components/Style.jsx';
+import Modal from 'react-bootstrap/Modal'
+import Button from 'react-bootstrap/Button'
 import { BodyWrapp } from './Styled/styledComps.jsx';
 import FermentablePopup from './components/PopupMenu/FermentablePopup.jsx';
 class App extends React.Component {
@@ -30,6 +32,7 @@ class App extends React.Component {
     }
     this.fermClickHandler = this.fermClickHandler.bind(this);
     this.addFermentableFromModal = this.addFermentableFromModal.bind(this);
+    this.handleClose=this.handleClose.bind(this);
   }
 
   componentDidMount() {
@@ -61,23 +64,16 @@ fermClickHandler(e){
   this.setState({fermclick: true});
 }
   render () {
-    var button;
-    if (this.state.buttonClick) {
-      button = (
-        <SubmissionButtonClicked onClick={this.clickHandler.bind(this)}>
-          Add Fermentable
-        </SubmissionButtonClicked>
-      );
-    } else {
-      button = (
+    var button = (
         <SubmissionButton onClick={this.clickHandler.bind(this)}>
           Add Fermentable
         </SubmissionButton>
       );
-    }
     return (
     <div style={{backgroundColor: '#efe2ba'}}>
+    <div>
       <TopBar/>
+      </div>
       <BodyWrapp>
       <h1>BurrHurr</h1>
       <div className='headerBar'>
@@ -87,7 +83,19 @@ fermClickHandler(e){
       <span className="abv">ABV: {this.state.ABV}</span>
       </div>
       <Fermentables fermentables={this.state.fermentables} clickHandler={this.fermClickHandler}/>
-      <Popup trigger={button} modal closeOnDocumentClick><div className="modal"><FermentablePopup addFerm={this.addFermentableFromModal}/></div></Popup>
+      {button}
+      <Modal show={this.state.buttonClick} onHide={this.handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>Add Fermentable</Modal.Title>
+          </Modal.Header>
+          <Modal.Body><FermentablePopup addFerm={this.addFermentableFromModal}/></Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={this.handleClose}>
+              Close
+            </Button>
+          </Modal.Footer>
+        </Modal>
+      {/* <Popup trigger={button} modal closeOnDocumentClick><div className="modal"><FermentablePopup addFerm={this.addFermentableFromModal}/></div></Popup> */}
       {/* <Hops/>
       <Yeast/>
       <Kettle/>
@@ -95,11 +103,11 @@ fermClickHandler(e){
       </BodyWrapp>
     </div>)
   }
+  handleClose(){
+    this.setState({ buttonClick: false });
+  }
   clickHandler(e) {
     this.setState({ buttonClick: !this.state.buttonClick });
-    setTimeout(() => {
-      this.setState({ buttonClick: false });
-    }, 100);
   }
 }
 

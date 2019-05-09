@@ -50,7 +50,7 @@ class FermentablePopup extends React.Component {
       })
       .then(fermentables => {
         this.setState({ fermentablesList: fermentables });
-      })
+      });
   }
   addNewClickHandler() {
     this.setState({ newFermentableClick: !this.state.newFermentableClick });
@@ -71,7 +71,11 @@ class FermentablePopup extends React.Component {
       'total_protein'
     ];
     colNames.forEach(col => {
-      fermentableToInsert[col] = this.state[col];
+      if (col === 'gravity_potential' && typeof this.state[col] != 'number') {
+        fermentableToInsert[col] = this.state['extract_fine_grind']/100 * 46;
+      } else {
+        fermentableToInsert[col] = this.state[col];
+      }
     });
     let options = {
       method: 'POST',
@@ -107,11 +111,10 @@ class FermentablePopup extends React.Component {
     }
   }
   deleteClickHandler() {
-    console.log('delete!', this.state.additionSet);
-    var promisArr=[]
+    var promisArr = [];
     Object.keys(this.state.additionSet).map(delID => {
-      let tempObj={};
-      tempObj['id']=delID;
+      let tempObj = {};
+      tempObj['id'] = delID;
       let options = {
         method: 'DELETE',
         headers: {
@@ -121,42 +124,40 @@ class FermentablePopup extends React.Component {
       };
       promisArr.push(fetch('/burrhurr/fermentables', options));
     });
-    Promise.all(promisArr)
-    .then(()=>{
+    Promise.all(promisArr).then(() => {
       this.updateList();
-    })
-    
+    });
   }
-  bodyRender(){
-    let body=(
+  bodyRender() {
+    let body = (
       <ListTable>
         <thead>
-        <tr>
-          <ListTableHeader>Name</ListTableHeader>
-          <ListTableHeader>Gravity Potential</ListTableHeader>
-          <ListTableHeader>Diastatic Power</ListTableHeader>
-          <ListTableHeader>Total Protein</ListTableHeader>
-          <ListTableHeader>Moisture</ListTableHeader>
-          <ListTableHeader>Color</ListTableHeader>
-          <ListTableHeader>Extract Differential</ListTableHeader>
-          <ListTableHeader>Extract Fine Grind</ListTableHeader>
-          <ListTableHeader>Extract Coarse Grind</ListTableHeader>
-          <ListTableHeader>Notes</ListTableHeader>
-        </tr>
+          <tr>
+            <ListTableHeader>Name</ListTableHeader>
+            <ListTableHeader>Gravity Potential</ListTableHeader>
+            <ListTableHeader>Diastatic Power</ListTableHeader>
+            <ListTableHeader>Total Protein</ListTableHeader>
+            <ListTableHeader>Moisture</ListTableHeader>
+            <ListTableHeader>Color</ListTableHeader>
+            <ListTableHeader>Extract Differential</ListTableHeader>
+            <ListTableHeader>Extract Fine Grind</ListTableHeader>
+            <ListTableHeader>Extract Coarse Grind</ListTableHeader>
+            <ListTableHeader>Notes</ListTableHeader>
+          </tr>
         </thead>
         <tbody>
-        {this.state.fermentablesList.map(fermentable => {
-          return (
-            <FermentableListItem
-              key={fermentable.id+'fermentable'}
-              fermentableItem={fermentable}
-              rowClick={this.rowClick}
-            />
-          );
-        })}
+          {this.state.fermentablesList.map(fermentable => {
+            return (
+              <FermentableListItem
+                key={fermentable.id + 'fermentable'}
+                fermentableItem={fermentable}
+                rowClick={this.rowClick}
+              />
+            );
+          })}
         </tbody>
       </ListTable>
-);
+    );
     if (this.state.newFermentableClick) {
       body = (
         <form>
@@ -201,7 +202,7 @@ class FermentablePopup extends React.Component {
     }
     return body;
   }
-  addFermToRec(e){
+  addFermToRec(e) {
     e.preventDefault();
     this.props.addFerm(this.state.additionSet);
   }
@@ -213,7 +214,9 @@ class FermentablePopup extends React.Component {
           if (!this.state.newFermentableClick) {
             return (
               <div>
-                <SubmissionButtonModal onClick={this.addFermToRec}>Add Fermentable To Recipe</SubmissionButtonModal>
+                <SubmissionButtonModal onClick={this.addFermToRec}>
+                  Add Fermentable To Recipe
+                </SubmissionButtonModal>
                 <SubmissionButtonModal onClick={this.deleteClickHandler}>
                   Delete Highlighted
                 </SubmissionButtonModal>

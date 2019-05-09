@@ -1,4 +1,5 @@
 import React from 'react';
+import FermentablesItem from './FermentablesItem.jsx';
 import {
   ListWrapper,
   ListTable,
@@ -8,9 +9,22 @@ import {
 class Fermentables extends React.Component {
   constructor(props) {
     super(props);
+    this.state= {
+      fermentablesClicked: {},
+    }
+    this.selectedFermentable = this.selectedFermentable.bind(this);
+  }
+  selectedFermentable(val){
+    let stateVal = this.state.fermentablesClicked;
+    if(stateVal[val.name]){
+      delete stateVal[val.name]
+      this.setState({fermentablesClicked: stateVal});
+    }else{
+      stateVal[val.name]=val;
+      this.setState({fermentablesClicked: stateVal});
+    }
   }
   render() {
- 
     var i = 0;
     return (
       <div>
@@ -30,11 +44,7 @@ class Fermentables extends React.Component {
             </thead>
             <tbody>
             {Object.keys(this.props.fermentables).map(fermentableId =>{
-              return (<tr key={fermentableId}>
-                {Object.keys(this.props.fermentables[fermentableId]).map(fermentableProperty=>{
-                  return (<Ltd key={fermentableId+fermentableProperty}>{this.props.fermentables[fermentableId][fermentableProperty]}</Ltd>)
-                })}
-              </tr>)
+              return <FermentablesItem selectedFermentable={this.selectedFermentable} key={fermentableId} fermItem={this.props.fermentables[fermentableId]} fermentableId={fermentableId}></FermentablesItem>
             })}
             </tbody>
           </ListTable>
