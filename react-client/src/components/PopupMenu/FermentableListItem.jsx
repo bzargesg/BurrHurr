@@ -33,7 +33,7 @@ class FermentableListItem extends React.Component {
             fermentableProperty != 'createdAt' &&
             fermentableProperty != 'updatedAt'
           ) {
-            return <Ltd>{this.state.fermentable[fermentableProperty]}</Ltd>;
+            return <Ltd key={this.state.fermentable.id+fermentableProperty}>{this.state.fermentable[fermentableProperty]}</Ltd>;
           }
         })}
       </tr>

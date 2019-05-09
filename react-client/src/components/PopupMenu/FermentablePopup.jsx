@@ -29,6 +29,10 @@ class FermentablePopup extends React.Component {
     this.addFermentableToDB = this.addFermentableToDB.bind(this);
     this.changeField = this.changeField.bind(this);
     this.rowClick = this.rowClick.bind(this);
+    this.deleteClickHandler = this.deleteClickHandler.bind(this);
+    this.updateList = this.updateList.bind(this);
+    this.bodyRender = this.bodyRender.bind(this);
+    this.addFermToRec = this.addFermToRec.bind(this);
   }
   componentDidMount() {
     this.updateList();
@@ -46,7 +50,7 @@ class FermentablePopup extends React.Component {
       })
       .then(fermentables => {
         this.setState({ fermentablesList: fermentables });
-      });
+      })
   }
   addNewClickHandler() {
     this.setState({ newFermentableClick: !this.state.newFermentableClick });
@@ -85,11 +89,6 @@ class FermentablePopup extends React.Component {
   changeField(e) {
     e.preventDefault();
     let fieldObj = {};
-    let colNames = [
-      'extract_coarse_grind',
-      'extract_differential',
-      'extract_fine_grind'
-    ];
     if (e.target.id === 'name' || e.target.id === 'notes') {
       fieldObj[e.target.id] = e.target.value;
     } else {
@@ -98,43 +97,67 @@ class FermentablePopup extends React.Component {
     this.setState(fieldObj);
   }
   rowClick(clickedRow) {
-    var testObj=this.state.additionSet;
+    var testObj = this.state.additionSet;
     if (testObj[clickedRow.id]) {
       delete testObj[clickedRow.id];
-      this.setState({ additionSet: testObj});
+      this.setState({ additionSet: testObj });
     } else {
-      testObj[clickedRow.id]=clickedRow;
+      testObj[clickedRow.id] = clickedRow;
       this.setState({ additionSet: testObj });
     }
   }
-  render() {
-    let body;
-    if (!this.state.newFermentableClick) {
-      body = (
-        <ListTable>
-          <tr>
-            <ListTableHeader>Name</ListTableHeader>
-            <ListTableHeader>Gravity Potential</ListTableHeader>
-            <ListTableHeader>Diastatic Power</ListTableHeader>
-            <ListTableHeader>Total Protein</ListTableHeader>
-            <ListTableHeader>Moisture</ListTableHeader>
-            <ListTableHeader>Color</ListTableHeader>
-            <ListTableHeader>Extract Differential</ListTableHeader>
-            <ListTableHeader>Extract Fine Grind</ListTableHeader>
-            <ListTableHeader>Extract Coarse Grind</ListTableHeader>
-            <ListTableHeader>Notes</ListTableHeader>
-          </tr>
-          {this.state.fermentablesList.map(fermentable => {
-            return (
-              <FermentableListItem
-                fermentableItem={fermentable}
-                rowClick={this.rowClick}
-              />
-            );
-          })}
-        </ListTable>
-      );
-    } else {
+  deleteClickHandler() {
+    console.log('delete!', this.state.additionSet);
+    var promisArr=[]
+    Object.keys(this.state.additionSet).map(delID => {
+      let tempObj={};
+      tempObj['id']=delID;
+      let options = {
+        method: 'DELETE',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(tempObj)
+      };
+      promisArr.push(fetch('/burrhurr/fermentables', options));
+    });
+    Promise.all(promisArr)
+    .then(()=>{
+      this.updateList();
+    })
+    
+  }
+  bodyRender(){
+    let body=(
+      <ListTable>
+        <thead>
+        <tr>
+          <ListTableHeader>Name</ListTableHeader>
+          <ListTableHeader>Gravity Potential</ListTableHeader>
+          <ListTableHeader>Diastatic Power</ListTableHeader>
+          <ListTableHeader>Total Protein</ListTableHeader>
+          <ListTableHeader>Moisture</ListTableHeader>
+          <ListTableHeader>Color</ListTableHeader>
+          <ListTableHeader>Extract Differential</ListTableHeader>
+          <ListTableHeader>Extract Fine Grind</ListTableHeader>
+          <ListTableHeader>Extract Coarse Grind</ListTableHeader>
+          <ListTableHeader>Notes</ListTableHeader>
+        </tr>
+        </thead>
+        <tbody>
+        {this.state.fermentablesList.map(fermentable => {
+          return (
+            <FermentableListItem
+              key={fermentable.id+'fermentable'}
+              fermentableItem={fermentable}
+              rowClick={this.rowClick}
+            />
+          );
+        })}
+        </tbody>
+      </ListTable>
+);
+    if (this.state.newFermentableClick) {
       body = (
         <form>
           Name:
@@ -176,31 +199,35 @@ class FermentablePopup extends React.Component {
         </form>
       );
     }
+    return body;
+  }
+  addFermToRec(e){
+    e.preventDefault();
+    this.props.addFerm(this.state.additionSet);
+  }
+  render() {
     return (
       <div style={{ height: '50%', width: '66%' }}>
-        {body}
+        {this.bodyRender()}
         {(() => {
           if (!this.state.newFermentableClick) {
             return (
-              <SubmissionButtonModal style={{ float: 'left' }}>
-                Add Fermentable
-              </SubmissionButtonModal>
+              <div>
+                <SubmissionButtonModal onClick={this.addFermToRec}>Add Fermentable To Recipe</SubmissionButtonModal>
+                <SubmissionButtonModal onClick={this.deleteClickHandler}>
+                  Delete Highlighted
+                </SubmissionButtonModal>
+              </div>
             );
           } else {
             return (
-              <SubmissionButtonModal
-                onClick={this.addFermentableToDB}
-                style={{ float: 'left' }}
-              >
+              <SubmissionButtonModal onClick={this.addFermentableToDB}>
                 Add
               </SubmissionButtonModal>
             );
           }
         })()}
-        <SubmissionButtonModal
-          onClick={this.addNewClickHandler.bind(this)}
-          style={{ float: 'right' }}
-        >
+        <SubmissionButtonModal onClick={this.addNewClickHandler.bind(this)}>
           Add New Fermentable
         </SubmissionButtonModal>
       </div>
