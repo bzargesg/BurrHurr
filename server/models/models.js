@@ -18,6 +18,7 @@ module.exports = {
     },
     //delete an instance
     delete: (id)=>{
+      console.log('delete', id)
       //takes id of the instance and removes
       return db.fermentables.delete(id);
     },
