@@ -17,6 +17,7 @@ class Fermentables extends React.Component {
         <ListWrapper>
           <h4> Fermentables: </h4>
           <ListTable>
+            <thead>
             <tr>
               <ListTableHeader>#</ListTableHeader>
               <ListTableHeader>Fermentable Name</ListTableHeader>
@@ -26,13 +27,16 @@ class Fermentables extends React.Component {
               <ListTableHeader>ABV contribution</ListTableHeader>
               <ListTableHeader>% of grist</ListTableHeader>
             </tr>
-            {this.props.fermentables.map(fermentable =>{
-              return (<tr>
-                {Object.keys(fermentable).map(fermentableProperty=>{
-                  return (<Ltd>{fermentable[fermentableProperty]}</Ltd>)
+            </thead>
+            <tbody>
+            {Object.keys(this.props.fermentables).map(fermentableId =>{
+              return (<tr key={fermentableId}>
+                {Object.keys(this.props.fermentables[fermentableId]).map(fermentableProperty=>{
+                  return (<Ltd key={fermentableId+fermentableProperty}>{this.props.fermentables[fermentableId][fermentableProperty]}</Ltd>)
                 })}
               </tr>)
             })}
+            </tbody>
           </ListTable>
       
         </ListWrapper>

@@ -23,15 +23,39 @@ class App extends React.Component {
       kettle: [],
       yeasts: [],
       styles: [],
-      fermentables: [{number: 1, name:'2-row', amount: '5lb', color: '40 L', gravity: '1.040-1.046',abv: '4-5%', percentage: '5%'}],
+      totalGrain: 0,
+      fermentables: {'51':{number: 1, name:'2-row', amount: '5lb', color: '40 L', gravity: '1.040-1.046',abv: '4-5%', percentage: '5%'}},
       hops: [],
       buttonClick: false,
     }
     this.fermClickHandler = this.fermClickHandler.bind(this);
+    this.addFermentableFromModal = this.addFermentableFromModal.bind(this);
   }
 
   componentDidMount() {
 
+  }
+  objectCleanup(obj){
+    let returnObj = {};
+    returnObj.number=2;
+    returnObj.name=obj.name;
+    returnObj.amount= '1lb';
+    returnObj.color=obj.color;
+    returnObj.gravity=obj.gravity_potential;
+    returnObj.abv='5%';
+    returnObj.percentage='5%';
+    return returnObj;
+    
+  }
+  addFermentableFromModal(fermList){
+    let newFermList=this.state.fermentables;
+    Object.keys(fermList).forEach(objectId=>{
+      if(!newFermList[objectId]){
+        
+        newFermList[objectId]=this.objectCleanup(fermList[objectId]);
+      }
+    })
+    this.setState({fermentables:newFermList});
   }
 fermClickHandler(e){
   this.setState({fermclick: true});
@@ -63,7 +87,7 @@ fermClickHandler(e){
       <span className="abv">ABV: {this.state.ABV}</span>
       </div>
       <Fermentables fermentables={this.state.fermentables} clickHandler={this.fermClickHandler}/>
-      <Popup trigger={button} modal closeOnDocumentClick><div className="modal"><FermentablePopup/></div></Popup>
+      <Popup trigger={button} modal closeOnDocumentClick><div className="modal"><FermentablePopup addFerm={this.addFermentableFromModal}/></div></Popup>
       {/* <Hops/>
       <Yeast/>
       <Kettle/>
