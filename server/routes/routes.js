@@ -49,7 +49,9 @@ router.post('/yeasts',(req,res)=>{});
 router.delete('/yeasts',(req,res)=>{});
 
 // get recipes
-router.get('/recipes',(req,res)=>{});
+router.get('/recipes',(req,res)=>{
+  
+});
 router.put('/recipes',(req,res)=>{});
 router.post('/recipes',(req,res)=>{});
 router.delete('/recipes',(req,res)=>{});

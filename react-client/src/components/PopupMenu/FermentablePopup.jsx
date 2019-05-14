@@ -1,13 +1,7 @@
 import React from 'react';
-import popup from 'reactjs-popup';
 import FermentableListItem from './FermentableListItem.jsx';
-import {
-  ListTable,
-  ListWrapper,
-  Ltd,
-  SubmissionButtonModal,
-  ListTableHeader
-} from '../../Styled/styledComps.jsx';
+import { ListTable, ListTableHeader } from '../../Styled/styledComps.jsx';
+import { Button, ButtonToolbar, Form } from 'react-bootstrap';
 class FermentablePopup extends React.Component {
   constructor(props) {
     super(props);
@@ -72,7 +66,8 @@ class FermentablePopup extends React.Component {
     ];
     colNames.forEach(col => {
       if (col === 'gravity_potential' && typeof this.state[col] != 'number') {
-        fermentableToInsert[col] = this.state['extract_fine_grind']/100 * 46;
+        fermentableToInsert[col] =
+          (this.state['extract_fine_grind'] / 100) * 46;
       } else {
         fermentableToInsert[col] = this.state[col];
       }
@@ -160,44 +155,108 @@ class FermentablePopup extends React.Component {
     );
     if (this.state.newFermentableClick) {
       body = (
-        <form>
-          Name:
-          <input id="name" onChange={this.changeField} type="text" />
-          Gravity Potential:
-          <input
-            id="gravity_potential"
-            onChange={this.changeField}
-            type="text"
-          />
-          Diastatic Power:
-          <input id="diastatic_power" onChange={this.changeField} type="text" />
-          Total Protein:
-          <input id="total_protein" onChange={this.changeField} type="text" />
-          Moisture:
-          <input id="moisture" onChange={this.changeField} type="text" />
-          Color:
-          <input id="color" onChange={this.changeField} type="text" />
-          Extract Differential:
-          <input
-            id="extract_differential"
-            onChange={this.changeField}
-            type="text"
-          />
-          Extract Fine Grind:
-          <input
-            id="extract_fine_grind"
-            onChange={this.changeField}
-            type="text"
-          />
-          Extract Coarse Grind:
-          <input
-            id="extract_coarse_grind"
-            onChange={this.changeField}
-            type="text"
-          />
-          Notes:
-          <input id="notes" onChange={this.changeField} type="text" />
-        </form>
+        <Form>
+          <Form.Group controlId="grainNameInput">
+            <Form.Label>Name:</Form.Label>
+            <Form.Control
+              size="sm"
+              id="name"
+              placeholder="enter grain name"
+              onChange={this.changeField}
+              type="text"
+            />
+          </Form.Group>
+          <Form.Group controlId="gravPotInput">
+            <Form.Label>Gravity Potential:</Form.Label>
+            <Form.Control
+              size="sm"
+              placeholder="enter gravity potential(PPG)/can also be calculated off of extract"
+              id="gravity_potential"
+              onChange={this.changeField}
+              type="text"
+            />
+          </Form.Group>
+          <Form.Group controlId="diastaticPowerInput">
+            <Form.Label>Diastatic Power:</Form.Label>
+            <Form.Control
+              size="sm"
+              placeholder="enter diastatic power in Lintner"
+              id="diastatic_power"
+              onChange={this.changeField}
+              type="text"
+            />
+          </Form.Group>
+          <Form.Group controlId="totalProteinInput">
+            <Form.Label>Total Protein:</Form.Label>
+            <Form.Control
+              size="sm"
+              placeholder="enter total soluble protein in %"
+              id="total_protein"
+              onChange={this.changeField}
+              type="text"
+            />
+          </Form.Group>
+          <Form.Group controlId="moistureInput">
+            <Form.Label>Moisture:</Form.Label>
+            <Form.Control
+              size="sm"
+              placeholder="enter total moisture in %"
+              id="moisture"
+              onChange={this.changeField}
+              type="text"
+            />
+          </Form.Group>
+          <Form.Group controlId="colorInput">
+            <Form.Label>Color:</Form.Label>
+            <Form.Control
+              size="sm"
+              placeholder="enter color in Lovibond"
+              id="color"
+              onChange={this.changeField}
+              type="text"
+            />
+          </Form.Group>
+          <Form.Group controlId="extractDiffInput">
+            <Form.Label>Extract Differential:</Form.Label>
+            <Form.Control
+              size="sm"
+              placeholder="enter extract differential"
+              id="extract_differential"
+              onChange={this.changeField}
+              type="text"
+            />
+          </Form.Group>
+          <Form.Group controlId="fineGrindInput">
+            <Form.Label>Extract Fine Grind:</Form.Label>
+            <Form.Control
+              size="sm"
+              placeholder="enter fine grind"
+              id="extract_fine_grind"
+              onChange={this.changeField}
+              type="text"
+            />
+          </Form.Group>
+          <Form.Group controlId="coarseGrindInput">
+            <Form.Label>Extract Coarse Grind:</Form.Label>
+            <Form.Control
+              size="sm"
+              placeholder="enter coarse grind"
+              id="extract_coarse_grind"
+              onChange={this.changeField}
+              type="text"
+            />
+          </Form.Group>
+          <Form.Group controlId="grainNotesInput">
+            <Form.Label>Notes:</Form.Label>
+            <Form.Control
+              size="sm"
+              placeholder="enter any notes about the grain"
+              id="notes"
+              onChange={this.changeField}
+              type="text"
+            />
+          </Form.Group>
+        </Form>
       );
     }
     return body;
@@ -210,29 +269,49 @@ class FermentablePopup extends React.Component {
     return (
       <div style={{ height: '50%', width: '66%' }}>
         {this.bodyRender()}
-        {(() => {
-          if (!this.state.newFermentableClick) {
-            return (
-              <div>
-                <SubmissionButtonModal onClick={this.addFermToRec}>
-                  Add Fermentable To Recipe
-                </SubmissionButtonModal>
-                <SubmissionButtonModal onClick={this.deleteClickHandler}>
-                  Delete Highlighted
-                </SubmissionButtonModal>
-              </div>
-            );
-          } else {
-            return (
-              <SubmissionButtonModal onClick={this.addFermentableToDB}>
-                Add
-              </SubmissionButtonModal>
-            );
-          }
-        })()}
-        <SubmissionButtonModal onClick={this.addNewClickHandler.bind(this)}>
-          Add New Fermentable
-        </SubmissionButtonModal>
+        {/* {(() => {
+              if (!this.state.newFermentableClick) {
+                return (
+                  <div>
+                    <Col md="auto">
+                      <Button onClick={this.addFermToRec}>
+                        Add Fermentable To Recipe
+                      </Button>
+                    </Col>
+                    <Col md="auto">
+                      <Button onClick={this.deleteClickHandler}>
+                        Delete Highlighted
+                      </Button>
+                    </Col>
+                  </div>
+                );
+              } else {
+                return (
+                  <div>
+                    <Col md="auto" >
+                      <Button onClick={this.addFermentableToDB}>Add</Button>
+                    </Col>
+                  </div>
+                );
+              }
+            })()} */}
+        <ButtonToolbar size="sm">
+          <Button variant="info" onClick={this.addFermToRec}>
+            Add To Recipe
+          </Button>
+
+          <Button variant="info" onClick={this.deleteClickHandler}>
+            Delete
+          </Button>
+
+          <Button variant="info" onClick={this.addFermentableToDB}>
+            Add
+          </Button>
+
+          <Button variant="info" onClick={this.addNewClickHandler.bind(this)}>
+            Add New Fermentable
+          </Button>
+        </ButtonToolbar>
       </div>
     );
   }
