@@ -1,4 +1,6 @@
 import React from 'react';
+import Col from 'react-bootstrap/Col'
+import Row from 'react-bootstrap/Row'
 import { Ltd } from '../Styled/styledComps.jsx';
 class FermentablesItem extends React.Component {
   constructor(props) {
@@ -22,15 +24,15 @@ class FermentablesItem extends React.Component {
   }
   render() {
     return (
-      <tr key={this.props.fermentableId+'tr'} style={this.state.style} onClick={this.clickElement} >
+      <Row key={this.props.fermentableId+'tr'} style={this.state.style} onClick={this.clickElement} >
         {Object.keys(this.props.fermItem).map(fermentableProperty => {
           return (
-            <Ltd key={this.props.fermentableId + fermentableProperty}>
+            <Col key={this.props.fermentableId + fermentableProperty}>
               {this.props.fermItem[fermentableProperty]}
-            </Ltd>
+            </Col>
           );
         })}
-      </tr>
+      </Row>
     );
   }
 }

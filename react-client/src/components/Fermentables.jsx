@@ -1,6 +1,6 @@
 import React from 'react';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
-import Tooltip from 'react-bootstrap/Tooltip';
+import {Tooltip, Container, Row, Col} from 'react-bootstrap';
 import FermentablesItem from './FermentablesItem.jsx';
 import {
   ListWrapper,
@@ -36,7 +36,7 @@ class Fermentables extends React.Component {
           </Tooltip>
         }
       >
-        <ListTableHeader>Fermentable Name ⓘ</ListTableHeader>
+        <Col>Fermentable Name ⓘ</Col>
       </OverlayTrigger>
     );
   }
@@ -51,7 +51,7 @@ class Fermentables extends React.Component {
         </Tooltip>
       }
     >
-      <ListTableHeader>Amount ⓘ</ListTableHeader>
+      <Col>Amount ⓘ</Col>
       </OverlayTrigger>
     ); 
   }
@@ -66,7 +66,7 @@ class Fermentables extends React.Component {
         </Tooltip>
       }
     >
-      <ListTableHeader>Color ⓘ</ListTableHeader>
+      <Col>Color ⓘ</Col>
       </OverlayTrigger>
     ); 
   }
@@ -81,7 +81,7 @@ class Fermentables extends React.Component {
         </Tooltip>
       }
     >
-      <ListTableHeader>Gravity Contribution ⓘ</ListTableHeader>
+      <Col>Gravity Contribution ⓘ</Col>
       </OverlayTrigger>
     ); 
   }
@@ -96,7 +96,7 @@ class Fermentables extends React.Component {
         </Tooltip>
       }
     >
-      <ListTableHeader>ABV contribution ⓘ</ListTableHeader>
+      <Col>ABV contribution ⓘ</Col>
       </OverlayTrigger>
     ); 
   }
@@ -111,7 +111,7 @@ class Fermentables extends React.Component {
         </Tooltip>
       }
     >
-      <ListTableHeader>% of grist ⓘ</ListTableHeader>
+      <Col>% of grist ⓘ</Col>
       </OverlayTrigger>
     ); 
   }
@@ -119,20 +119,19 @@ class Fermentables extends React.Component {
     var i = 0;
     return (
       <div>
-        <ListWrapper>
+        <Container>
           <h4> Fermentables: </h4>
-          <ListTable>
-            <thead>
-              <tr>
-                <ListTableHeader>#</ListTableHeader>
+          
+              <Row>
+                <Col>#</Col>
                 {this.nameTooltip()}
                 {this.amountTooltip()}
                 {this.colorTooltip()}
+                {this.gravityTooltip()}
                 {this.abvTooltip()}
                 {this.gristTooltip()}
-              </tr>
-            </thead>
-            <tbody>
+              </Row>
+              
               {Object.keys(this.props.fermentables).map(fermentableId => {
                 return (
                   <FermentablesItem
@@ -143,9 +142,9 @@ class Fermentables extends React.Component {
                   />
                 );
               })}
-            </tbody>
-          </ListTable>
-        </ListWrapper>
+            
+          
+        </Container>
       </div>
     );
   }
