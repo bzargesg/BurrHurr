@@ -27,7 +27,8 @@ class App extends React.Component {
       totalGrain: 0,
       fermentables: {},
       hops: [],
-      buttonClick: false
+      buttonClick: false,
+      numberGrain: 0
     };
     this.fermClickHandler = this.fermClickHandler.bind(this);
     this.addFermentableFromModal = this.addFermentableFromModal.bind(this);
@@ -38,24 +39,23 @@ class App extends React.Component {
   incGrainHandler() {}
   decGrainHandler() {}
   componentDidMount() {}
-  objectCleanup(obj, number) {
+  objectCleanup(obj) {
     let returnObj = {};
-    returnObj.number = number;
+    returnObj.number = this.state.numberGrain+1;
     returnObj.name = obj.name;
     returnObj.amount = '1lb';
     returnObj.color = obj.color;
     returnObj.gravity = obj.gravity_potential;
     returnObj.abv = '5%';
     returnObj.percentage = '5%';
+    this.setState({numberGrain: this.state.numberGrain+1});
     return returnObj;
   }
   addFermentableFromModal(fermList) {
     let newFermList = this.state.fermentables;
-    let i = 0;
     Object.keys(fermList).forEach(objectId => {
       if (!newFermList[objectId]) {
-        i++;
-        newFermList[objectId] = this.objectCleanup(fermList[objectId], i);
+        newFermList[objectId] = this.objectCleanup(fermList[objectId]);
       }
     });
     this.setState({ fermentables: newFermList });
@@ -81,6 +81,7 @@ class App extends React.Component {
             fermentables={this.state.fermentables}
             clickHandler={this.fermClickHandler}
           />
+          <br></br>
           <Container>
             <Row>
               <Col>

@@ -2,12 +2,6 @@ import React from 'react';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import {Tooltip, Container, Row, Col} from 'react-bootstrap';
 import FermentablesItem from './FermentablesItem.jsx';
-import {
-  ListWrapper,
-  ListTable,
-  ListTableHeader,
-  Ltd
-} from '../Styled/styledComps.jsx';
 class Fermentables extends React.Component {
   constructor(props) {
     super(props);
@@ -36,7 +30,7 @@ class Fermentables extends React.Component {
           </Tooltip>
         }
       >
-        <Col>Fermentable Name ⓘ</Col>
+        <Col>Fermentable Name</Col>
       </OverlayTrigger>
     );
   }
@@ -51,7 +45,7 @@ class Fermentables extends React.Component {
         </Tooltip>
       }
     >
-      <Col>Amount ⓘ</Col>
+      <Col>Amount</Col>
       </OverlayTrigger>
     ); 
   }
@@ -66,7 +60,7 @@ class Fermentables extends React.Component {
         </Tooltip>
       }
     >
-      <Col>Color ⓘ</Col>
+      <Col>Color</Col>
       </OverlayTrigger>
     ); 
   }
@@ -76,12 +70,11 @@ class Fermentables extends React.Component {
       placement="top"
       overlay={
         <Tooltip id="fermentationGravityTooltip">
-          Color contribution of the grain.
-          An overall color of 40 is black and 3 is pale straw.
+          Gravity/sugar contribution of the grain.
         </Tooltip>
       }
     >
-      <Col>Gravity Contribution ⓘ</Col>
+      <Col>Gravity Contribution</Col>
       </OverlayTrigger>
     ); 
   }
@@ -96,7 +89,7 @@ class Fermentables extends React.Component {
         </Tooltip>
       }
     >
-      <Col>ABV contribution ⓘ</Col>
+      <Col>ABV contribution</Col>
       </OverlayTrigger>
     ); 
   }
@@ -111,7 +104,7 @@ class Fermentables extends React.Component {
         </Tooltip>
       }
     >
-      <Col>% of grist ⓘ</Col>
+      <Col>% of grist</Col>
       </OverlayTrigger>
     ); 
   }

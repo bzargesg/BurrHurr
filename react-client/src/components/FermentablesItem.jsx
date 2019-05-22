@@ -1,7 +1,6 @@
 import React from 'react';
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
-import { Ltd } from '../Styled/styledComps.jsx';
 class FermentablesItem extends React.Component {
   constructor(props) {
     super(props);
