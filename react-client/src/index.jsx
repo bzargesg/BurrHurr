@@ -33,14 +33,22 @@ class App extends React.Component {
     this.fermClickHandler = this.fermClickHandler.bind(this);
     this.addFermentableFromModal = this.addFermentableFromModal.bind(this);
     this.handleClose = this.handleClose.bind(this);
+    this.fermAmountChange = this.fermAmountChange.bind(this);
 
+  }
+  
+  fermAmountChange(e,id){
+    console.log(e.target.value,':',id);
+    let fermState=this.state.fermentables;
+    fermState[id+''].amount = e.target.value;
+    this.setState({fermentables: fermState});
   }
   componentDidMount() {}
   objectCleanup(obj,grainNumber) {
     let returnObj = {};
     returnObj.number = grainNumber;
     returnObj.name = obj.name;
-    returnObj.amount = '1lb';
+    returnObj.amount = 1;
     returnObj.color = obj.color;
     returnObj.gravity = obj.gravity_potential;
     returnObj.abv = '5%';
@@ -77,6 +85,7 @@ class App extends React.Component {
           </div>
           <Fermentables
             fermentables={this.state.fermentables}
+            amountChange={this.fermAmountChange}
             clickHandler={this.fermClickHandler}
           />
           <br></br>

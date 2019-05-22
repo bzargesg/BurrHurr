@@ -9,7 +9,9 @@ class Fermentables extends React.Component {
       fermentablesClicked: {}
     };
     this.selectedFermentable = this.selectedFermentable.bind(this);
+    
   }
+
   selectedFermentable(val) {
     let stateVal = this.state.fermentablesClicked;
     if (stateVal[val.name]) {
@@ -129,6 +131,7 @@ class Fermentables extends React.Component {
                 return (
                   <FermentablesItem
                     selectedFermentable={this.selectedFermentable}
+                    amountChange={this.props.amountChange}
                     key={fermentableId}
                     fermItem={this.props.fermentables[fermentableId]}
                     fermentableId={fermentableId}

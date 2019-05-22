@@ -9,9 +9,10 @@ class FermentablesItem extends React.Component {
       style: {},
       clickState: false
     };
-    this.clickElement = this.clickElement.bind(this);
+    this.menu = this.menu.bind(this);
   }
-  clickElement() {
+  menu(e) {
+    e.preventDefault();
     if (!this.state.clickState) {
       this.setState({
         style: { backgroundColor: '#d79922' },
@@ -22,19 +23,23 @@ class FermentablesItem extends React.Component {
     }
     this.props.selectedFermentable(this.props.fermItem);
   }
+  amountChange(e){
+    e.preventDefault();
+    this.props.amountChange(e,this.props.fermentableId)
+  }
   render() {
     return (
       <Row
         key={this.props.fermentableId + 'tr'}
         style={this.state.style}
-        onClick={this.clickElement}
+        onContextMenu={this.menu}
       >
         {Object.keys(this.props.fermItem).map(fermentableProperty => {
           let colField;
           if (fermentableProperty === 'amount') {
             colField = (
               <Col key={this.props.fermentableId + fermentableProperty}>
-                <Form.Control type="amount" placeholder="in lbs" />
+                <Form.Control type="amount" placeholder="in lbs" onChange={this.amountChange.bind(this)}/>
               </Col>
             );
           } else {
