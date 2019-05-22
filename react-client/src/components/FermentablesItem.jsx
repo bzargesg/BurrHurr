@@ -1,6 +1,7 @@
 import React from 'react';
-import Col from 'react-bootstrap/Col'
-import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col';
+import Form from 'react-bootstrap/Form';
+import Row from 'react-bootstrap/Row';
 class FermentablesItem extends React.Component {
   constructor(props) {
     super(props);
@@ -23,13 +24,27 @@ class FermentablesItem extends React.Component {
   }
   render() {
     return (
-      <Row key={this.props.fermentableId+'tr'} style={this.state.style} onClick={this.clickElement} >
+      <Row
+        key={this.props.fermentableId + 'tr'}
+        style={this.state.style}
+        onClick={this.clickElement}
+      >
         {Object.keys(this.props.fermItem).map(fermentableProperty => {
-          return (
-            <Col key={this.props.fermentableId + fermentableProperty}>
-              {this.props.fermItem[fermentableProperty]}
-            </Col>
-          );
+          let colField;
+          if (fermentableProperty === 'amount') {
+            colField = (
+              <Col key={this.props.fermentableId + fermentableProperty}>
+                <Form.Control type="amount" placeholder="in lbs" />
+              </Col>
+            );
+          } else {
+            colField = (
+              <Col key={this.props.fermentableId + fermentableProperty}>
+                {this.props.fermItem[fermentableProperty]}
+              </Col>
+            );
+          }
+          return colField;
         })}
       </Row>
     );

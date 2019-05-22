@@ -28,37 +28,35 @@ class App extends React.Component {
       fermentables: {},
       hops: [],
       buttonClick: false,
-      numberGrain: 0
+      numberGrain: 1
     };
     this.fermClickHandler = this.fermClickHandler.bind(this);
     this.addFermentableFromModal = this.addFermentableFromModal.bind(this);
     this.handleClose = this.handleClose.bind(this);
-    this.incGrainHandler = this.incGrainHandler(this);
-    this.decGrainHandler = this.decGrainHandler(this);
+
   }
-  incGrainHandler() {}
-  decGrainHandler() {}
   componentDidMount() {}
-  objectCleanup(obj) {
+  objectCleanup(obj,grainNumber) {
     let returnObj = {};
-    returnObj.number = this.state.numberGrain+1;
+    returnObj.number = grainNumber;
     returnObj.name = obj.name;
     returnObj.amount = '1lb';
     returnObj.color = obj.color;
     returnObj.gravity = obj.gravity_potential;
     returnObj.abv = '5%';
     returnObj.percentage = '5%';
-    this.setState({numberGrain: this.state.numberGrain+1});
     return returnObj;
   }
   addFermentableFromModal(fermList) {
     let newFermList = this.state.fermentables;
+    let numberGrain = this.state.numberGrain;
     Object.keys(fermList).forEach(objectId => {
       if (!newFermList[objectId]) {
-        newFermList[objectId] = this.objectCleanup(fermList[objectId]);
+        newFermList[objectId] = this.objectCleanup(fermList[objectId],numberGrain);
       }
+      numberGrain++;
     });
-    this.setState({ fermentables: newFermList });
+    this.setState({ fermentables: newFermList,numberGrain: numberGrain });
   }
   fermClickHandler(e) {
     this.setState({ fermclick: true });
@@ -84,16 +82,6 @@ class App extends React.Component {
           <br></br>
           <Container>
             <Row>
-              <Col>
-                <Button variant="info" size="sm" onClick={this.incGrainHandler}>
-                  Add Grain
-                </Button>
-              </Col>
-              <Col>
-                <Button variant="info" size="sm" onClick={this.decGrainHandler}>
-                  Decrease Grain
-                </Button>
-              </Col>
               <Col>
                 <Button
                   variant="info"
