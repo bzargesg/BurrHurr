@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Popup from 'reactjs-popup';
+// import Popup from 'reactjs-popup';
+import fermentableHelper from './helperfunctions/fermentablesCalc';
 import TopBar from './components/TopBar.jsx';
 import Fermentables from './components/Fermentables.jsx';
 import Hops from './components/Hops.jsx';
@@ -16,7 +17,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      volume: '0L',
+      volume: 5,
       color: 0,
       IBU: 0,
       ABV: 0,
@@ -28,23 +29,36 @@ class App extends React.Component {
       fermentables: {},
       hops: [],
       buttonClick: false,
-      numberGrain: 1
+      numberGrain: 1,
+      totalGrain: 0,
+      totalGravity: 0,
+      finalGravity: 0
     };
     this.fermClickHandler = this.fermClickHandler.bind(this);
     this.addFermentableFromModal = this.addFermentableFromModal.bind(this);
     this.handleClose = this.handleClose.bind(this);
     this.fermAmountChange = this.fermAmountChange.bind(this);
+  }
 
+  fermAmountChange(e, id) {
+    let fermState = this.state.fermentables;
+    fermState[id + ''].amount = e.target.value ? Number(e.target.value) : 0;
+    let newGrav = fermentableHelper.gravity(this.state.fermentables,this.state.volume);
+    this.setState({
+      fermentables: fermState,
+      totalGrain: fermentableHelper.totalGrain(this.state.fermentables),
+      color: fermentableHelper.color(this.state.fermentables, this.state.volume),
+      totalGravity: newGrav,
+      finalGravity: newGrav * (1-.75),
+      ABV: fermentableHelper.abv(newGrav)
+    });
   }
-  
-  fermAmountChange(e,id){
-    console.log(e.target.value,':',id);
-    let fermState=this.state.fermentables;
-    fermState[id+''].amount = e.target.value;
-    this.setState({fermentables: fermState});
+  componentDidUpdate(prevProps, prevState) {
+    //change grist total
+    //abv total
+    //total grain
   }
-  componentDidMount() {}
-  objectCleanup(obj,grainNumber) {
+  objectCleanup(obj, grainNumber) {
     let returnObj = {};
     returnObj.number = grainNumber;
     returnObj.name = obj.name;
@@ -60,11 +74,23 @@ class App extends React.Component {
     let numberGrain = this.state.numberGrain;
     Object.keys(fermList).forEach(objectId => {
       if (!newFermList[objectId]) {
-        newFermList[objectId] = this.objectCleanup(fermList[objectId],numberGrain);
+        newFermList[objectId] = this.objectCleanup(
+          fermList[objectId],
+          numberGrain
+        );
       }
       numberGrain++;
     });
-    this.setState({ fermentables: newFermList,numberGrain: numberGrain });
+    let newGrav = fermentableHelper.gravity(this.state.fermentables,this.state.volume);
+    this.setState({
+      fermentables: newFermList,
+      numberGrain: numberGrain,
+      totalGrain: fermentableHelper.totalGrain(this.state.fermentables),
+      color: fermentableHelper.color(this.state.fermentables, this.state.volume),
+      totalGravity: newGrav,
+      finalGravity: newGrav * (1-.75),
+      ABV: fermentableHelper.abv(newGrav)
+    });
   }
   fermClickHandler(e) {
     this.setState({ fermclick: true });
@@ -77,18 +103,21 @@ class App extends React.Component {
         </div>
         <BodyWrapp>
           <h1>BurrHurr</h1>
-          <div className="headerBar">
-            <span className="volume">Volume: {this.state.volume}</span>
-            <span className="color">Color: {this.state.color}</span>
-            <span className="ibu">IBU: {this.state.IBU}</span>
-            <span className="abv">ABV: {this.state.ABV}</span>
-          </div>
+          <Row className="headerBar">
+            <Col className="totalGrain">Total Grain:{this.state.totalGrain + 'lb'}</Col>
+            <Col className="totalGravity">Total Grav.:{(this.state.totalGravity).toFixed(2)}</Col>
+            <Col className="finalGravity">Final Grav.:{(this.state.finalGravity).toFixed(2)}</Col>
+            <Col className="volume">Volume: {this.state.volume + 'g'}</Col>
+            <Col className="color">Color: {this.state.color}</Col>
+            <Col className="ibu">IBU: {this.state.IBU}</Col>
+            <Col className="abv">ABV: {(this.state.ABV).toFixed(3)}</Col>
+          </Row>
           <Fermentables
             fermentables={this.state.fermentables}
             amountChange={this.fermAmountChange}
             clickHandler={this.fermClickHandler}
           />
-          <br></br>
+          <br />
           <Container>
             <Row>
               <Col>
