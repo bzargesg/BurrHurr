@@ -39,7 +39,7 @@ class FermentablesItem extends React.Component {
           if (fermentableProperty === 'amount') {
             colField = (
               <Col key={this.props.fermentableId + fermentableProperty}>
-                <Form.Control type="amount" placeholder="in lbs" onChange={this.amountChange.bind(this)}/>
+                <Form.Control type="amount" placeholder="1 lb" onChange={this.amountChange.bind(this)}/>
               </Col>
             );
           } else {

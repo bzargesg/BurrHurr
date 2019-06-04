@@ -10,7 +10,7 @@ import Kettle from './components/Kettle.jsx';
 import Style from './components/Style.jsx';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Form } from 'react-bootstrap';
 import { BodyWrapp } from './Styled/styledComps.jsx';
 import FermentablePopup from './components/PopupMenu/FermentablePopup.jsx';
 class App extends React.Component {
@@ -95,6 +95,14 @@ class App extends React.Component {
   fermClickHandler(e) {
     this.setState({ fermclick: true });
   }
+  volumeChange(e){
+    let newGrav = fermentableHelper.gravity(this.state.fermentables,e.target.value);
+    this.setState({
+      volume: Number(e.target.value),
+      totalGravity: newGrav,
+      finalGravity: newGrav * (1-.75)
+    })
+  }
   render() {
     return (
       <div style={{ backgroundColor: '#efe2ba' }}>
@@ -107,8 +115,8 @@ class App extends React.Component {
             <Col className="totalGrain">Total Grain:{this.state.totalGrain + 'lb'}</Col>
             <Col className="totalGravity">Total Grav.:{(this.state.totalGravity).toFixed(2)}</Col>
             <Col className="finalGravity">Final Grav.:{(this.state.finalGravity).toFixed(2)}</Col>
-            <Col className="volume">Volume: {this.state.volume + 'g'}</Col>
-            <Col className="color">Color: {this.state.color}</Col>
+            <Col className="volume">Volume:<Form.Control type="amount" size="sm" placeholder="5 gallons" onChange={this.volumeChange.bind(this)}/></Col>
+            <Col className="color"><div style={{backgroundColor: 'red', height: '10px', width: '10px'}}></div>Color: {this.state.color}</Col>
             <Col className="ibu">IBU: {this.state.IBU}</Col>
             <Col className="abv">ABV: {(this.state.ABV).toFixed(3)}</Col>
           </Row>
