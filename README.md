@@ -11,6 +11,14 @@ A recipe calculator for homebrewing
 ## Current Todo's
 * refactor into (render pattern)[https://reactjs.org/docs/render-props.html]
 * refactor state into (react-redux)[https://react-redux.js.org/]
+
+## Future Todos
+* Refactor API
+* Implement Hops
+* Implement Kettle
+* Implement Style
+* Implement Yeast
+
 ## Getting Started
 
 * npm run react-dev
