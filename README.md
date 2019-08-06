@@ -9,8 +9,9 @@ A recipe calculator for homebrewing
 ![Changing Fermentable Quantity](https://media.giphy.com/media/XE6g8VNgRrXfhzOWLE/giphy.gif)
 
 ## Current Todo's
-* refactor into (render pattern)[https://reactjs.org/docs/render-props.html]
-* refactor state into (react-redux)[https://react-redux.js.org/]
+* refactor into [render pattern](https://reactjs.org/docs/render-props.html)
+* refactor state into [react-redux](https://react-redux.js.org/)
+* Testing
 
 ## Future Todos
 * Refactor API
