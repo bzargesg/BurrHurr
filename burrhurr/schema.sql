@@ -1,0 +1,235 @@
+DROP DATABASE IF EXISTS BurrHurr;
+
+CREATE DATABASE BurrHurr;
+
+USE BurrHurr;
+
+CREATE TABLE fermentables
+(
+  ID int NOT NULL
+  AUTO_INCREMENT,
+  NAME varchar
+  (50) NOT NULL,
+  TYPE varchar
+  (50) NOT NULL,
+  GRAVITY_POTENTIAL DECIMAL
+  (6,6),
+  DIASTATIC_POWER INT,
+  TOTAL_PROTEIN DECIMAL
+  (2,2),
+  ADDITION_TIME VARCHAR
+  (50),
+  MOISTURE DECIMAL
+  (2,2),
+  COLOR DECIMAL
+  (4,2),
+  EXTRACT_DIFFERENTIAL DECIMAL
+  (2,1),
+  EXTRACT_FINE_GRIND DECIMAL
+  (2,2),
+  EXTRACT_COARSE_GRIND DECIMAL
+  (2,2),
+  NOTES VARCHAR
+  (255),
+  PRIMARY KEY
+  (ID)
+);
+  CREATE TABLE yeasts
+  (
+    ID int NOT NULL
+    AUTO_INCREMENT,
+  NAME VARCHAR
+    (50) NOT NULL,
+  LAB VARCHAR
+    (50),
+  TYPE VARCHAR
+    (15),
+  FLOCCULATION VARCHAR
+    (15),
+  CELLS INT,
+  MINIMUM_ATTENUATION DECIMAL
+    (2,2),
+  MAXIMUM_ATTENUATION DECIMAL
+    (2,2),
+  REUSE_QUANTITY INT,
+  MIN_TEMP DECIMAL
+    (3,2),
+  MAX_TEMP DECIMAL
+    (3,2),
+  DESCRIPTION varchar
+    (50),
+    NOTES VARCHAR
+    (255),
+  PRIMARY KEY
+    (ID)
+);
+
+    CREATE TABLE hops
+    (
+      ID int NOT NULL
+      AUTO_INCREMENT,
+  NAME VARCHAR
+      (50),
+  ALPHA_ACID DECIMAL
+      (2,2),
+  BETA_ACID DECIMAL
+      (2,2),
+  TYPE VARCHAR
+      (15),
+  FORM VARCHAR
+      (15),
+  description varchar
+      (255),
+  ORIGIN VARCHAR
+      (15),
+      NOTES VARCHAR
+      (255),
+  PRIMARY KEY
+      (ID)
+);
+      CREATE TABLE styles
+      (
+        id int NOT NULL
+        AUTO_INCREMENT,
+NAME VARCHAR
+        (50),
+CATEGORY VARCHAR
+        (50),
+TYPE VARCHAR
+        (15),
+OG_MIN DECIMAL
+        (1,5),
+OG_MAX DECIMAL
+        (1,5),
+FG_MIN DECIMAL
+        (1,5),
+FG_MAX DECIMAL
+        (1,5),
+IBU_MIN DECIMAL
+        (3,2),
+IBU_MAX DECIMAL
+        (3,2),
+COLOR_MIN DECIMAL
+        (3,2),
+COLOR_MAX DECIMAL
+        (3,2),
+CARBONATION_MIN DECIMAL
+        (2,1),
+CARBONATION_MAX DECIMAL
+        (2,1),
+ABV_MIN DECIMAL
+        (2,3),
+ABV_MAX DECIMAL
+        (2,3),
+EXAMPLES VARCHAR
+        (255),
+NOTES VARCHAR
+        (255),
+PRIMARY KEY
+        (ID)
+);
+        CREATE TABLE equipment
+        (
+          ID int NOT NULL
+          AUTO_INCREMENT,
+NAME VARCHAR
+          (50),
+VOLUME DECIMAL
+          (5,3),
+BOIL_OFF DECIMAL
+          (2,3),
+SPECIFIC_HEAT DECIMAL
+          (1,4),
+DEADSPACE DECIMAL
+          (3,3),
+EFFICIENCY DECIMAL
+          (3,2),
+COOL_LOSS DECIMAL
+          (2,2),
+TRUB_LOSS DECIMAL
+          (4,3),
+HOP_UTILIZATION DECIMAL
+          (3,2),
+NOTES VARCHAR
+          (255),
+PRIMARY KEY
+          (ID)
+);
+-- many to many with hops, yeast, fermentables
+CREATE TABLE recipes
+(
+  ID int NOT NULL AUTO_INCREMENT,
+  NAME VARCHAR(50),
+  STYLE INTEGER,
+  WATER_PROFILE INTEGER,
+  FERMENTATION_PROFILE INTEGER,
+  CARBONATION_PROFILE INTEGER,
+  MASH_PROFILE INTEGER,
+  FOREIGN KEY MASH_PROFILE REFERENCES mash_profiles ID,
+  FOREIGN KEY CARBONATION_PROFILE REFERENCES carbonation_profiles ID,
+  FOREIGN KEY FERMENTATION_PROFILE REFERENCES fermentation_profiles ID,
+  FOREIGN KEY STYLE REFERENCES styles ID,
+  FOREIGN KEY WATER_PROFILE REFERENCES water_profiles ID,
+  NOTES VARCHAR(255),
+  PRIMARY KEY(ID)
+);
+CREATE TABLE water_profiles
+(
+ID int NOT NULL AUTO_INCREMENT,
+PH DECIMAL(2,2),
+CALCIUM INTEGER,
+MAGNESIUM INTEGER,
+SODIUM INTEGER,
+SULFATE INTEGER,
+CHLORIDE INTEGER,
+BICARBONATE INTEGER,
+GYPSUM INTEGER,
+SALT INTEGER,
+EPSOM INTEGER,
+CA_CL INTEGER,
+SODA INTEGER,
+CHALK INTEGER,
+NOTES VARCHAR(255),
+PRIMARY KEY
+(ID)
+);
+CREATE TABLE fermentation_profiles
+(
+ID int NOT NULL AUTO_INCREMENT,
+NOTES varchar(255) NOT NULL,
+NAME VARCHAR(50),
+PRIMARY KEY(ID)
+);
+CREATE TABLE carbonation_profiles
+(
+ID int NOT NULL AUTO_INCREMENT,
+SUGAR_QUANTITY DECIMAL(4,2),
+VOLUMES DECIMAL(2,2),
+NAME integer NOT NULL,
+NOTES varchar(255) NOT NULL,
+PRIMARY KEY(ID)
+);
+CREATE TABLE mash_profiles
+(
+ID int NOT NULL
+AUTO_INCREMENT,
+quantity integer NOT NULL,
+description varchar
+(50) NOT NULL,
+PRIMARY KEY
+(ID)
+);
+CREATE TABLE mash_profiles
+(
+ID int NOT NULL
+AUTO_INCREMENT,
+NAME varchar(50),
+PURPOSE varchar(50),
+description varchar
+(50) NOT NULL,
+PRIMARY KEY
+(ID)
+);
+/*  Execute this file from the command line by typing:
+*    mysql -u root < server/schema.sql
+*  to create the database and the tables.*/

@@ -13,6 +13,7 @@ import Button from 'react-bootstrap/Button';
 import { Container, Row, Col, Form } from 'react-bootstrap';
 import { BodyWrapp } from './Styled/styledComps.jsx';
 import FermentablePopup from './components/PopupMenu/FermentablePopup.jsx';
+import HopPopup from './components/PopupMenu/HopPopup.jsx';
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -27,30 +28,82 @@ class App extends React.Component {
       styles: [],
       totalGrain: 0,
       fermentables: {},
-      hops: [],
+      hops: {},
       buttonClick: false,
       numberGrain: 1,
+      numberHop: 1,
       totalGrain: 0,
       totalGravity: 0,
-      finalGravity: 0
+      finalGravity: 0,
+      colorStyle: {backgroundColor: 'RGB(249,233,173)', height: '100px', width: '100px'}
     };
     this.fermClickHandler = this.fermClickHandler.bind(this);
     this.addFermentableFromModal = this.addFermentableFromModal.bind(this);
     this.handleClose = this.handleClose.bind(this);
     this.fermAmountChange = this.fermAmountChange.bind(this);
+    this.hopClickHandler = this.hopClickHandler.bind(this);
+    this.hopAmountChange = this.hopAmountChange.bind(this);
+    this.addHopFromModal = this.addHopFromModal.bind(this);
   }
 
+  beerColor(lovibond){
+    let green = 0, red = 0, blue= 0;
+    if(lovibond<40){
+      green = lovibond > 30 ? 12 : 233 + 7.99 * lovibond - 1.73 * Math.pow(lovibond,2) + .0407*Math.pow(lovibond,3);
+      red =  249-8.79*lovibond+.0831*Math.pow(lovibond,2);
+      blue = 169 - 46.5*Math.log(lovibond);
+    }
+    return {backgroundColor: `RGB(${red},${green},${blue})`, height: '100px', width: '100px'};
+  }
+  hopObjectCleanup(obj, hopNumber) {
+    let returnObj = {};
+    // returnObj.number = grainNumber;
+    // returnObj.name = obj.name;
+    // returnObj.amount = 1;
+    // returnObj.color = obj.color;
+    // returnObj.gravity = obj.gravity_potential;
+    // returnObj.abv = '5%';
+    // returnObj.percentage = '5%';
+    return returnObj;
+  }
+  addHopFromModal(hopList) {
+    let newHopList = this.state.hops;
+    let numberHop = this.state.numberHop;
+    Object.keys(hopList).forEach(objectId => {
+      if (!newHopList[objectId]) {
+        newHopList[objectId] = this.hopObjectCleanup(
+          hopList[objectId],
+          numberHop
+        );
+      }
+      numberHop++;
+    });
+  }
+  hopClickHandler(e) {
+    this.setState({ hopclick: true });
+  }
+  hopAmountChange(e, id) {
+    let hopState = this.state.hops;
+    hopState[id + ''].amount = e.target.value ? Number(e.target.value) : 0;
+    //Set Ibu
+    // this.setState({
+    //   fermentables: fermState,
+    //   totalGrain: fermentableHelper.totalGrain(this.state.fermentables),
+    //   });
+  }
   fermAmountChange(e, id) {
     let fermState = this.state.fermentables;
     fermState[id + ''].amount = e.target.value ? Number(e.target.value) : 0;
     let newGrav = fermentableHelper.gravity(this.state.fermentables,this.state.volume);
+    let newColor = fermentableHelper.color(this.state.fermentables, this.state.volume);
     this.setState({
       fermentables: fermState,
       totalGrain: fermentableHelper.totalGrain(this.state.fermentables),
-      color: fermentableHelper.color(this.state.fermentables, this.state.volume),
+      color: newColor,
       totalGravity: newGrav,
       finalGravity: newGrav * (1-.75),
-      ABV: fermentableHelper.abv(newGrav)
+      ABV: fermentableHelper.abv(newGrav),
+      colorStyle: this.beerColor(newColor)
     });
   }
   componentDidUpdate(prevProps, prevState) {
@@ -58,7 +111,7 @@ class App extends React.Component {
     //abv total
     //total grain
   }
-  objectCleanup(obj, grainNumber) {
+  fermObjectCleanup(obj, grainNumber) {
     let returnObj = {};
     returnObj.number = grainNumber;
     returnObj.name = obj.name;
@@ -74,7 +127,7 @@ class App extends React.Component {
     let numberGrain = this.state.numberGrain;
     Object.keys(fermList).forEach(objectId => {
       if (!newFermList[objectId]) {
-        newFermList[objectId] = this.objectCleanup(
+        newFermList[objectId] = this.fermObjectCleanup(
           fermList[objectId],
           numberGrain
         );
@@ -82,14 +135,16 @@ class App extends React.Component {
       numberGrain++;
     });
     let newGrav = fermentableHelper.gravity(this.state.fermentables,this.state.volume);
+    let newColor = fermentableHelper.color(this.state.fermentables, this.state.volume);
     this.setState({
       fermentables: newFermList,
       numberGrain: numberGrain,
       totalGrain: fermentableHelper.totalGrain(this.state.fermentables),
-      color: fermentableHelper.color(this.state.fermentables, this.state.volume),
+      color: newColor,
       totalGravity: newGrav,
       finalGravity: newGrav * (1-.75),
-      ABV: fermentableHelper.abv(newGrav)
+      ABV: fermentableHelper.abv(newGrav),
+      colorStyle: this.beerColor(newColor)
     });
   }
   fermClickHandler(e) {
@@ -116,7 +171,7 @@ class App extends React.Component {
             <Col className="totalGravity">Total Grav.:{(this.state.totalGravity).toFixed(2)}</Col>
             <Col className="finalGravity">Final Grav.:{(this.state.finalGravity).toFixed(2)}</Col>
             <Col className="volume">Volume:<Form.Control type="amount" size="sm" placeholder="5 gallons" onChange={this.volumeChange.bind(this)}/></Col>
-            <Col className="color"><div style={{backgroundColor: 'red', height: '10px', width: '10px'}}></div>Color: {this.state.color}</Col>
+            <Col className="color"><div style={this.state.colorStyle}></div>Color: {this.state.color}</Col>
             <Col className="ibu">IBU: {this.state.IBU}</Col>
             <Col className="abv">ABV: {(this.state.ABV).toFixed(3)}</Col>
           </Row>
@@ -156,7 +211,44 @@ class App extends React.Component {
               </Button>
             </Modal.Footer>
           </Modal>
-          {/* <Hops/>
+          <hr></hr>
+           <Hops
+            hops={this.state.hops}
+            amountChange={this.hopAmountChange}
+            clickHandler={this.hopClickHandler}
+           />
+            <br />
+          <Container>
+            <Row>
+              <Col>
+                <Button
+                  variant="info"
+                  size="sm"
+                  onClick={this.clickHandler.bind(this)}
+                >
+                  Add Hops
+                </Button>
+              </Col>
+            </Row>
+          </Container>
+          {/* <Modal
+            show={this.state.buttonClick}
+            onHide={this.handleClose}
+            size="lg"
+          >
+            <Modal.Header closeButton>
+              <Modal.Title>Hops</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <HopPopup addHop={this.addHopFromModal} />
+            </Modal.Body>
+            <Modal.Footer>
+              <Button variant="secondary" onClick={this.handleClose}>
+                Close
+              </Button>
+            </Modal.Footer>
+          </Modal> */}
+           {/*
       <Yeast/>
       <Kettle/>
       <Style/> */}
