@@ -1,0 +1,690 @@
+Name,Lab,Type,Form,Temp,Attenuation,Flocculation,Notes
+Frankenyeast,Various,Ale,Liquid,62°F - 75°F,75.0%,Low,"A blend of twenty-five yeast strains, most of which are English or Belgian in origin.
+
+Best for: Anything where interesting yeast character is desired."
+Nottingham Ale Yeast,White Labs,Ale,Liquid,32°F - 32°F,77.5%,,
+Array American Hefeweizen Ale Yeast WLP320,White Labs,Ale,Liquid,65°F - 69°F,76.0%,Low,
+WLP001 California Ale,White Labs,Ale,Liquid,68°F - 73°F,76.5%,High,"Very clean flavor, balance and stability. Accentuates hop flavor Versitile - can be used to make any style ale.
+
+Best for: American Style Ales, Ambers, Pale Ales, Brown Ale, Strong Ale"
+WLP002 English Ale,White Labs,Ale,Liquid,65°F - 68°F,66.5%,Very High,"Classic ESB strain best for English style milds, bitters, porters and English style stouts. Leaves a clear beer with some residual sweetness.
+
+Best for: English Pale Ale, ESB, India Pale Ale, Brown Ale, Porter, Sweet Stouts and Strong Ales"
+WLP003 German Ale II,White Labs,Ale,Liquid,65°F - 70°F,76.5%,Medium,"Strong sulfer component will reduce with aging. Clean flavor, but with more ester production than regular German Ale Yeast.
+
+Best for: Kolsch, Alt and German Pale Ales"
+WLP004 Irish Ale Yeast,White Labs,Ale,Liquid,65°F - 68°F,71.5%,Medium,"Excellent for Irish Stouts. Produces slight hint of diacetyl balanced by a light fruitiness and a slightly dry crispness.
+
+Best for: Irish Ales, Stouts, Porters, Browns, Reds and Pale Ale"
+WLP005 British Ale,White Labs,Ale,Liquid,67°F - 74°F,70.5%,High,"This yeast has higher attenuation than the White Labs English Ale yeast strains. Produces a malty flavored beer.
+
+Best for: Excellent for all English style ales including bitters, pale ale, porters and brown ale."
+WLP006 Bedford British Ale,White Labs,Ale,Liquid,65°F - 70°F,76.0%,High,"High attenuation. Ferments dry with high flocculation. Distinctive ester profile. Good for most English ale styles.
+
+Best for: English style ales - bitter, pale, porter and brown ale"
+WLP007 Dry English Ale,White Labs,Ale,Liquid,65°F - 70°F,75.0%,High,"Clean, Highly flocculant, and highly attentive yeast. Similar to White labs English Ale yeast, but more attentive. Suitable for high gravity ales.
+
+Best for: Pale Ales, Amber, ESB, Brown Ales, Strong Ales"
+WLP008 East Coast Ale,White Labs,Ale,Liquid,68°F - 73°F,72.5%,Low,"White labs ""Brewer Patriot"" strain can be used to reproduce many of the American versions of classic beer styles. Very clean with low esters. 
+
+Best for: American Ales, Golden ales, Blonde Ale, Pale Ale and German Alt styles"
+Name,Lab,Type,Form,Temp,Attenuation,Flocculation,Notes
+WLP009 Australian Ale Yeast,White Labs,Ale,Liquid,65°F - 70°F,72.5%,High,"White Labs entry for Australian Ales. Produces a clean, malty finish with pleasant ester character. Bready character. Can ferment clean at high temperatures.
+
+Best for: Australian Ales, English Ales"
+WLP011 European Ale,White Labs,Ale,Liquid,65°F - 70°F,67.5%,Medium,"Malty, Northern European ale yeast. Low ester production, low sulfer, gives a clean profile. Low attenuation contributes to malty taste.
+
+Best for: Alt, Kolsch, malty English Ales, Fruit beers"
+WLP013 London Ale,White Labs,Ale,Liquid,66°F - 71°F,71.0%,Medium,"Dry, malty ale yeast. Produces a complex, oak flavored ester character. Hop bitterness comes through well.
+
+Best for: Classic British Pale Ales, Bitters and Stouts"
+WLP022 Essex Ale Yeast,White Labs,Ale,Liquid,66°F - 70°F,73.5%,Medium,"Flavorful British yeast with a drier finish than many ale yeasts. Bready and fruity in character. Well suited for top cropping (collecting). Does not flocculate as much as WLP005 or WLP002.
+
+Best for: British milds, pale ales, bitters, stouts."
+WLP023 Burton Ale,White Labs,Ale,Liquid,68°F - 73°F,72.0%,Medium,"Burton-on-trent yeast produces a complex character. Flavors include apple, pear, and clover honey.
+
+Best for: All English styles including Pale Ale, IPA, Porter, Stout and Bitters."
+WLP025 Southwold Ale,White Labs,Ale,Liquid,66°F - 69°F,71.5%,Medium,"From Suffolk county. Products complex fruity and citrus flavors. Slight sulfer production, but this will fade with ageing.
+
+Best for: British bitters and pale ales."
+WLP026 Premium Bitter Ale,White Labs,Ale,Liquid,67°F - 70°F,72.5%,Medium,"From Staffordshire England. Mild, but complex estery flavor. High attenuation - ferments strong and dry. Suitable for high gravity beers.
+
+Best for: All English ales including bitters, milds, ESB, Porter, Stout and Barley Wine"
+WLP028 Edinburgh Ale,White Labs,Ale,Liquid,65°F - 70°F,72.5%,Medium,"Malty strong ale yeast. Reproduces complex, malty, flavorful schottish ales. Hop character comes through well.
+
+Best for: Strong Scottish style ales, ESB, Irish Reds"
+WLP029 German Ale/Kolsch,White Labs,Ale,Liquid,65°F - 69°F,75.0%,Medium,"Great for light beers. Accentuates hop flavors. Slight sulfer flavor will fade with age and leave a clean, lager like ale.
+
+Best for: Kolsch, Altbiers, Pale Ales, Blonde and Honey Ales"
+WLP033 Klassic Ale Yeast,White Labs,Ale,Liquid,66°F - 70°F,70.0%,Medium,"Traditional English Ale style yeast. Produces ester character, and allows hop flavor through. Leaves a slightly sweet malt character in ales.
+
+Best for: Bitters, milds, porters stouts and scottish ale styles."
+WLP036 Dusseldorf Alt Yeast,White Labs,Ale,Liquid,65°F - 69°F,68.5%,Medium,"Traditional Alt yeast from Dusseldorf, Germany. Produces clean, slightly sweet alt beers. Does not accentuate hop flavor like WLP029 does.
+
+Best for: Alt biers, Dusseldorf Alts, German Ales"
+Name,Lab,Type,Form,Temp,Attenuation,Flocculation,Notes
+WLP037 Yorkshire Square Ale Yeast,White Labs,Ale,Liquid,65°F - 69°F,70.0%,High,"This yeast produces a malty but well balanced profile. Expect toasty flavors with malt driven esters. Highly flocculent and a good choice for many English ales.
+
+Best for: English pale ales, English brown ales and Mild ales"
+WLP038 Manchester Ale Yeast,White Labs,Ale,Liquid,65°F - 70°F,72.0%,Medium,"Top fermenting strain that is good for top-cropping. Moderately flocculent with a clean, dry finish. Low ester profile for producing a balanced English ale.
+
+Best for: English style ales"
+WLP039 Nottingham Ale Yeast,White Labs,Ale,Liquid,66°F - 70°F,77.5%,Medium,"British style of ale yeast with a very dry finish and high attenuation. Medium to low fruit and fusel alcohol production. Good top fermenting yeast for cropping. 
+
+Best for: British ales, pale ales, ambers, porters and stouts."
+WLP041 Pacific Ale,White Labs,Ale,Liquid,65°F - 68°F,67.5%,High,"Popular yeast from the Pacific Northwest. Leaves a clear and malty profile. More fruity than WLP002. Suitable for many English and American styles.
+
+Best for: English & American ales including milds, bitters, IPA, porters and English stouts."
+WLP051 California Ale V,White Labs,Ale,Liquid,66°F - 70°F,72.5%,High,"Similar to White Labs California Ale Yeast, but slightly lower attenuation leaves a fuller bodied beer.
+
+Best for: American style Pales, Ambers, Browns, IPAs, American Strong Ale"
+WLP060 American Ale Yeast Blend,White Labs,Ale,Liquid,68°F - 72°F,76.0%,Medium,"A blend that celebrates WLP001 (California Ale Yeast's) clean, neutral fermentation. This strain is versatile and adds two other yeast strains that are also clean/neutral in flavor to add a bit of complexity - almost a lager like finish. Slight sulfur m
+
+Best for: American ales with clean finish"
+WLP080 Cream Ale Yeast Blend,White Labs,Ale,Liquid,65°F - 70°F,77.5%,Medium,"A blend of ale and lager yeast strains that work together to create a clean, light American lager style ale. A pleasing estery aroma may be perceived. Hop flavors and bitterness are slightly subdued. Slight sulfer will be produced during fermentation f
+
+Best for: Cream Ale, Hybrids"
+WLP090 San Diego Super Yeast,White Labs,Ale,Liquid,65°F - 68°F,75.0%,Very High,"A super clean, super-fast fermenting strain. A low ester-producing strain that results in a balanced, neutral flavor and aroma profile. Alcohol-tolerant and very versatile for a wide variety of styles. Similar to California Ale Yeast WLP001 but it generally ferments faster.
+
+Best for: IPAs, American ales"
+WLP090 San Diego Super Yeast WLP090,White Labs,Ale,Liquid,65°F - 68°F,79.5%,Medium,
+WLP099 Super High Gravity Ale,White Labs,Ale,Liquid,69°F - 74°F,82.0%,Low,"Ferments up to 25% alcohol content. Flavor may vary greatly depending on beer alcohol. English like esters at low gravity, but will become more wine-like as alcohol exceeds 16% ABV. Refer to White Labs web page for tips on fermenting high gravity ales.
+
+Best for: Very high gravity beers and barley wine up to 25% alcohol."
+WLP300 Hefeweizen Ale,White Labs,Wheat,Liquid,68°F - 72°F,74.0%,Low,"Produces the banana and clove nose traditionally associated with German Wheat beers. Also produces desired cloudy look.
+
+Best for: German style wheat beers. Weiss, Weizen, Hefeweizen"
+Name,Lab,Type,Form,Temp,Attenuation,Flocculation,Notes
+WLP320 American Hefeweizen Ale,White Labs,Wheat,Liquid,65°F - 69°F,72.5%,Low,"Produces a much smaller amount of clove and banana flavor than the German Hefeweizen White Labs yeast. Some sulfur, and creates desired cloudy look.
+
+Best for: Oregon style American Hefeweizen"
+WLP351 Bavarian Weizen Yeast,White Labs,Wheat,Liquid,66°F - 70°F,75.0%,Low,"Former yeast lab W51 strain. Produces a classic German style wheat beer with moderately high, spicy, phenolic overtones reminiscent of cloves.
+
+Best for: Bavarian Weizen and wheat beers."
+WLP380 Hefeweizen IV Ale,White Labs,Wheat,Liquid,66°F - 70°F,76.5%,Low,"Large clove and phenolic aroma, but with minimal banana flavor. Citrus and apricot notes. Crisp and drinkable, with some sulfur production.
+
+Best for: German style Hefeweizen"
+WLP400 Belgian Wit Ale,White Labs,Wheat,Liquid,67°F - 74°F,76.0%,Low,"Phenolic and tart. The original yeast used to produce Wit in Belgium.
+
+Best for: Belgian Wit"
+WLP410 Belgian Wit II,White Labs,Ale,Liquid,67°F - 74°F,72.5%,Medium,"Less phenolic than WLP400 (Belgian Wit Ale) but more spicy. Leaves a little more sweetness and flocculation is higher than WLP400.
+
+Best for: Belgian Wit, Spiced Ale, Wheat Ales and Specialty Beers"
+WLP500 Trappist Ale,White Labs,Ale,Liquid,65°F - 72°F,77.5%,Medium,"Distinctive fruitiness and plum characteristics. Excellent for high gravity beers.
+
+Best for: Trappist Ale, Dubbel, Trippel, Belgian Ales"
+WLP510 Bastogne Belgian Ale,White Labs,Ale,Liquid,66°F - 72°F,77.0%,Medium,"High gravity Trappist ale yeast. Creates a dry beer with a slightly acidic finish. Cleaner finish and slightly less spicy than WLP500 or WLP530. 
+
+Best for: High gravity beers, Belgian ales, Dubbels, Trippels."
+WLP515 Antwerp Ale Yeast,White Labs,Ale,Liquid,67°F - 70°F,76.5%,Medium,"Clean, almost lager like Belgian ale yeast. Good for Belgian pale and amber ales or with other Belgian yeasts in a blend. Biscuity, ale like aroma present. Hop flavors are accentuated. Slight sulfur during fermentation, and a lager like flavor profile
+
+Best for: Belgian pale and amber ales"
+WLP530 Abbey Ale,White Labs,Ale,Liquid,66°F - 72°F,77.5%,Medium,"Used in two of six remaining Trappist breweries. Distinctive plum and fruitiness. Good for high gravity beers.
+
+Best for: Belgian Trappist Ale, Spiced Ale, Trippel, Dubbel, Grand Cru"
+WLP540 Abbey IV Ale Yeast,White Labs,Ale,Liquid,66°F - 72°F,78.0%,Medium,"An authentic Trappist style ale yeast. Use for Belgian ales including abbey ales (dubbels, tripels). Fruit character is medium - between WLP500 (high) and WLP530 (low)
+
+Best for: Trappist Belgian Ales, Dubbels, Tripels and Specialty ales"
+WLP545 Belgian Strong Ale Yeast,White Labs,Ale,Liquid,65°F - 73°F,81.5%,Medium,"From the Ardennes region of Belgium, this classic strain produces moderate esters and spicy phenolic character. Results in a dry but balanced finish. Use for dark or strong abbey ales.
+
+Best for: Belgian dark strongs, Abbey ales and Christmas beers"
+Name,Lab,Type,Form,Temp,Attenuation,Flocculation,Notes
+WLP550 Belgian Ale,White Labs,Ale,Liquid,68°F - 78°F,81.5%,Medium,"Phenolic and spicy flavors. Complex profile, with less fruitiness than White's Trappist Ale strain.
+
+Best for: Belgian Ales, Saisons, Belgian Reds, Belgian Browns, White beers"
+WLP565 Belgian Saison I Ale,White Labs,Ale,Liquid,68°F - 75°F,70.0%,Medium,"Saison yeast from Wallonia. Earthy, spicy and peppery notes. Slightly sweet.
+
+Best for: Saison Ale, Belgian Ale, Dubbel, Trippel"
+WLP566 Belgian Saison II Yeast,White Labs,Ale,Liquid,68°F - 78°F,81.5%,Medium,"Saison strain with a more fruity ester profile than WLP565 (Belgian Saison I Yeast). Moderately phenolic with a clove-like characteristic in finished beer flavor and aroma. Ferments quickly.
+
+Best for: Belgian or French Saison"
+WLP568 Belgian Style Saison Ale Yeast Blend,White Labs,Ale,Liquid,70°F - 80°F,75.0%,Medium,"This blend melds Belgian style ale and Saison strains. The strains work in harmony to create complex, fruity aromas and flavors. The blend of yeast strains encourages complete fermentation in a timely manner. Phenolic, spicy, earthy, and clove like flavor
+
+Best for: Belgian and French Saison"
+WLP570 Belgian Golden Ale,White Labs,Ale,Liquid,68°F - 75°F,75.5%,Low,"Combination of fruitiness and phenolic characters dominate the profile. Some sulfur which will dissapate following fermentation.
+
+Best for: Belgian Ales, Dubbel, Grand Cru, Belgian Holiday Ale"
+WLP575 Belgian Style Ale Yeast Blend,White Labs,Ale,Liquid,68°F - 75°F,77.0%,Medium,"Blend of two trappist ale yeasts and one Belgian ale yeast. Creates a versatile blend to be used for Trappist and other Belgian style ales.
+
+Best for: Trappist and other Belgian ales."
+WLP630 Berliner Weisse Blend,White Labs,Wheat,Liquid,68°F - 72°F,76.5%,Medium,"A blend of a traditional German Weizen yeast and Lactobacillus to create a subtle, tart, drinkable beer. Can take several months to develop tart character. Perfect for traditional Berliner Weisse.
+
+Best for: Berliner Weisse"
+WLP644 Brettanomyces Bruxellensis Trois,White Labs,Ale,Liquid,70°F - 84.9°F,85.0%,Low,"This Belgian strain, used traditionally for 100% Brettanomyces fermentations, produces a slightly tart beer with delicate characteristics of mango and pineapple. Can also be used to produce effervescence when bottle-conditioning."
+WLP645 Brettanomyces Claussenii,White Labs,Ale,Liquid,65°F - 72°F,70.0%,Medium,"Low intensity Brett character. Originally isolated from strong English stock beer, in the early 20th century. The Brett flavors produced are more subtle than WLP650 and WLP653. More aroma than flavor contribution. Fruity, pineapple like aroma.
+
+Best for: Sour ales (in secondary)"
+WLP650 Brettanomyces Bruxellensis,White Labs,Ale,Liquid,65°F - 72°F,70.0%,Medium,"Medium intensity Brett character. Classic strain used in secondary fermentation for Belgian style beers and lambics. One Trappist brewery uses this strain in secondary fermentation.
+
+Best for: Belgian sour ales and labics (in secondary)"
+WLP653 Brettanomyces Lambicus,White Labs,Ale,Liquid,65°F - 72°F,70.0%,Medium,"Use in secondary. High intensity Brett character. Defines the ""Brett character"": Horsey, smoky and spicy flavors. As the name suggests, this strain is found most often in Lambic style beers, which are spontaneously fermented beers.
+
+Best for: Lambics and Flanders/Sour Brown ales"
+Name,Lab,Type,Form,Temp,Attenuation,Flocculation,Notes
+WLP655 Belgian Sour Mix 1,White Labs,Ale,Liquid,65°F - 72°F,70.0%,Medium,"Note: Bacteria to use in secondary only. A unique blend perfect for Belgian style beers. Includes Brettanomyces, Saccharomyces, and the bacterial strains Lactobacillus and Pediococcus.
+
+Best for: Belgian sour beers (in secondary)"
+WLP670 American Farmhouse Blend,White Labs,Ale,Liquid,68°F - 72°F,78.5%,Medium,"Inspired by local American brewers crafting semi- traditional Belgian-style ales. This blend creates a complex flavor profile with a moderate level of sourness. It consists of a traditional farmhouse yeast strain and Brettanomyces. Great yeast for farmho
+
+Best for: Saisons, Farmhouse Ales"
+WLP675 Malolactic Bacteria,White Labs,Ale,Liquid,65°F - 72°F,70.0%,Medium,"Bacteria for use in secondary. Malolactic fermentation is the conversion of malic acid to lactic acid by bacteria from the lactic acid bacteria family. Lactic acid is less acidic than malic acid, which in turn decreases acidity and helps to soften and/o
+
+Best for: Primarily wine"
+WLP677 Lactobacillus Bacteria,White Labs,Ale,Liquid,65°F - 72°F,70.0%,Medium,"Bacteria for use in secondary. This lactic acid bacteria produces moderate levels of acidity and sour flavors found in lambics, Berliner Weiss, sour brown ale and gueze.
+
+Best for: Lambic, Berliner Weiss, Sour Brown and Gueze (secondary)"
+WLP700 Flor Sherry Yeast,White Labs,Wine,Liquid,70°F - 76°F,83.0%,Medium,"This yeast develops a film (flor) on the surface of the wine. Creates green almond, granny smith and nougat characteristics found in sherry. Can also be used for Port, Madeira and other sweet styles. For use in secondary fermentation. Slow fermentor. Al
+
+Best for: Sherry wine yeast"
+WLP705 Sake Yeast,White Labs,Wine,Liquid,70°F - 76°F,83.0%,Medium,"For use in rice based fermentations. For sake, use this yeast in conjunction with Koji (to produce fermentable sugar). WLP705 produces full body sake character, and subtle fragrance. Alcohol tolerance to 16%.
+
+Best for: Sake wine yeast"
+WLP715 Champagne Yeast,White Labs,Champagne,Liquid,70°F - 75°F,77.5%,Low,"Can tolerate alcohol up to 17%. For Barley Wine or Meads.
+
+Best for: Wine, Mead and Cider"
+WLP718 Avize Wine Yeast,White Labs,Wine,Liquid,60°F - 90°F,83.0%,Medium,"Champagne isolate used for complexity in whites. Contributes elegance, especially in barrel fermented Chardonnays. Alcohol tolerance to 15%.
+
+Best for: Chardonnay"
+WLP720 Sweet Mead/Wine,White Labs,Wine,Liquid,70°F - 75°F,72.5%,Low,"Lower attenuation than White Labs Champagne Yeast. Leaves some residual sweetness as well as fruity flavor. Alcohol concentration up to 15%.
+
+Best for: Sweet Mead, Wine and Cider"
+WLP727 Steinberg-Geisenheim Wine,White Labs,Wine,Liquid,50°F - 90°F,83.0%,Low,"German origin wine yeast. High fruit/ester production. Moderate fermentation characteristics and cold tolerant.
+
+Best for: Riesling wines."
+WLP730 Chardonnay White Wine Yeast,White Labs,Wine,Liquid,50°F - 90°F,83.0%,Low,"Dry wine yeast. Slight ester production, low sulfur dioxide production. Enhances varietal character. WLP730 is a good choice for all white and blush wines, including Chablis, Chenin Blanc, Semillon, and Sauvignon Blanc. Fermentation speed is moderate. Al
+
+Best for: Chardonnay Wine"
+Name,Lab,Type,Form,Temp,Attenuation,Flocculation,Notes
+WLP735 French White Wine Yeast,White Labs,Wine,Liquid,60°F - 90°F,83.0%,Low,"Classic yeast for white wine fermentation. Slow to moderate fermenter and foam producer. Gives an enhanced creamy texture. Alcohol Tolerance: 16%
+
+Best for: French white wines"
+WLP740 Merlot Red Wine Yeast,White Labs,Wine,Liquid,60°F - 90°F,83.0%,Low,"Neutral, low fusel alcohol production. Will ferment to dryness, alcohol tolerance to 18%. Vigorous fermenter. WLP740 is well suited for Merlot, Shiraz, Pinot Noir, Chardonnay, Cabernet, Sauvignon Blanc, and Semillon. Alcohol Tolerance: 18%
+
+Best for: Merlot, Shiraz, Pinot Noir, Chardonnay, Cabernet, Sauvignon Blanc, and Semillon"
+WLP749 Assmanshausen Wine Yeast,White Labs,Wine,Liquid,50°F - 90°F,83.0%,Low,"German red wine yeast, which results in spicy, fruit aromas. Perfect for Pinot Noir and Zinfandel. Slow to moderate fermenter which is cold tolerant. Alcohol Tolerance: 16%
+
+Best for: Pinot Noir and Zinfandel"
+WLP750 French Red Wine Yeast,White Labs,Wine,Liquid,60°F - 90°F,83.0%,Low,"Classic Bordeaux yeast for red wine fermentations. Moderate fermentation characteristics. Tolerates lower fermentation temperatures. Rich, smooth flavor profile. Alcohol Tolerance: 17%
+
+Best for: Bordeaux"
+WLP760 Cabernet Red Wine Yeast,White Labs,Wine,Liquid,60°F - 90°F,83.0%,Low,"High temperature tolerance. Moderate fermentation speed. Excellent for full-bodied red wines, ester production complements flavor. WLP760 is also suitable for Merlot, Chardonnay, Chianti, Chenin Blanc, and Sauvignon Blanc. Alcohol Tolerance: 16%
+
+Best for: Merlot, Chardonnay, Chianti, Chenin Blanc, and Sauvignon Blanc"
+WLP770 Suremain Burgundy Wine Yeast,White Labs,Wine,Liquid,60°F - 90°F,83.0%,Low,"Emphasizes fruit aromas in barrel fermentations. High nutrient requirement to avoid volatile acidity production. Alcohol Tolerance: 16%
+
+Best for: Burgundy"
+WLP775 English Cider Yeast,White Labs,Wine,Liquid,68°F - 75°F,83.0%,Medium,"Classic Cider yeast. Ferments dry, but retains apple flavor. Some sulfer produced during fermentation will fade with age.
+
+Best for: Cider, Wine and High Gravity Beer"
+WLP800 Pilsner Lager,White Labs,Lager,Liquid,50°F - 55°F,74.5%,High,"Classic pilsner strain from Czech Republic. Dry with a malty finish.
+
+Best for: European Pilsners, Bohemian Pilsner"
+WLP802 Czech Budejovice Lager,White Labs,Lager,Liquid,50°F - 55°F,77.5%,Medium,"Dry and crisp with low diacetyl production. From Southern Czech Republic.
+
+Best for: Bohemian Style Pilsner"
+WLP810 San Francisco Lager,White Labs,Lager,Liquid,58°F - 65°F,67.5%,High,"Produces ""California Common"" style beer.
+
+Best for: California and Premium Lagers, all American Lagers"
+WLP815 Belgian Lager Yeast,White Labs,Lager,Liquid,50°F - 55°F,75.0%,Medium,"Clean, crisp European lager yeast with low sulfur production. The strain originates from a very old brewery in West Belgium. Great for European style pilsners, dark lagers, Vienna lager, and American style lagers. 
+
+Best for: European style pilsners, dark lagers, Vienna lager, and American style lagers"
+Name,Lab,Type,Form,Temp,Attenuation,Flocculation,Notes
+WLP820 Octoberfest/Marzen Lager,White Labs,Lager,Liquid,52°F - 58°F,69.0%,Medium,"Produces a malty, bock style beer. Does not finish as dry or as fast as White's German Lager yeast. Longer lagering or starter recommended.
+
+Best for: Marzen, Oktoberfest, European Lagers, Bocks, Munich Helles"
+WLP830 German Lager,White Labs,Lager,Liquid,50°F - 55°F,76.5%,Medium,"Very malty and clean. One of the world's most popular lager yeasts.
+
+Best for: German Marzen, Pilsner, Lagers, Oktoberfest beers."
+WLP830 German Lager Yeast WLP830,White Labs,Lager,Liquid,50°F - 55°F,82.0%,Medium,
+WLP833 German Bock Lager,White Labs,Lager,Liquid,48°F - 55°F,73.0%,Medium,"Produces beer that has balanced malt and hop character. From Southern Bavaria.
+
+Best for: Bocks, Doppelbocks, Oktoberfest, Vienna, Helles, some American Pilsners"
+WLP838 Southern German Lager,White Labs,Lager,Liquid,50°F - 55°F,72.0%,High,"Malty finish and balanced aroma. Strong fermenter, slight sulfur and low diacetyl.
+
+Best for: German Pilsner, Helles, Oktoberfest, Marzen, Bocks"
+WLP840 American Lager Yeast,White Labs,Lager,Liquid,50°F - 55°F,77.5%,Medium,"Dry and clean with very slight apple fruitiness. Minimal sulfer and diacetyl.
+
+Best for: All American Style Lagers -- both light and dark."
+WLP840 American Lager Yeast WLP840,White Labs,Lager,Liquid,50°F - 55°F,77.5%,Medium,
+WLP860 Munich Helles,White Labs,Ale,Liquid,48°F - 52°F,70.0%,Medium,"Possible Augustiner Strain? This yeast helps to produce a malty, but balanced traditional Munich-style lager. Clean and strong fermenter, it's great for a variety of lager styles ranging from Helles to Rauchbier.
+
+Best for: Munich Helles, Oktoberfest"
+WLP862 Cry Havoc,White Labs,Lager,Liquid,68°F - 74°F,68.0%,Medium,"Licensed by White Labs from Charlie Papazian, author of ""The Complete Joy of Home Brewing"". This yeast was used to brew many of his original recipes. Diverse strain can ferment at ale and lager temps.
+
+Best for: All American Style Lagers -- both light and dark."
+WLP885 Zurich Lager,White Labs,Lager,Liquid,50°F - 55°F,75.0%,Medium,"Swiss style lager yeast. Sulfer and diacetyl production is minimal. May be used for high gravity lagers with proper care.
+
+Best for: Swiss style lager, and high gravity lagers (over 11% ABV)"
+WLP920 Old Bavarian Lager,White Labs,Lager,Liquid,50°F - 55°F,69.5%,Medium,"Southern Germany/Bavarian lager yeast. Finishes malty with a slight ester profile.
+
+Best for: Oktoberfest, Marzen, Bock and Dark Lagers."
+Name,Lab,Type,Form,Temp,Attenuation,Flocculation,Notes
+WLP940 Mexican Lager,White Labs,Lager,Liquid,50°F - 55°F,74.0%,Medium,"From Mexico City - produces a clean lager beer with a crisp finish. Good for mexican style beers.
+
+Best for: Mexican style light and dark lagers."
+American Ale,Wyeast,Ale,Liquid,32°F - 32°F,75.0%,,
+American Ale,Wyeast,Ale,Liquid,32°F - 32°F,75.0%,,
+1007 German Ale,Wyeast,Ale,Liquid,55°F - 66°F,75.0%,Low,"Crisp, dry finish with a mild flavor.
+
+Best for: German Ales, Alts, Kolsch, Dry Stout"
+1010 American Wheat 1010,Wyeast,Wheat,Liquid,58°F - 74°F,76.0%,Low,
+1010 American Wheat Ale,Wyeast,Ale,Liquid,58°F - 74°F,76.0%,Low,"Dry, Crisp, tart beer in the American Hefeweizen style. Low flocculation aids in producing desired chill haze.
+
+Best for: American Wheat, Berlin Weiss, Hefeweizen"
+1026 British Cask Ale,Wyeast,Ale,Liquid,63°F - 72°F,75.5%,Medium,"A great choice for any cask conditioned British Ale. Produces nice malt profile with a hint of fruit. Finishes dry and slightly tart. 
+
+Best for: British Ales"
+1028 London Ale Yeast,Wyeast,Ale,Liquid,60°F - 72°F,75.0%,Medium,"Dry finish, bold, rich flavor, some fruit profile and a crisp finish.
+
+Best for: English Ales, Bitters, IPAs, Brown Ale"
+1056 American Ale,Wyeast,Ale,Liquid,60°F - 72°F,75.0%,Medium,"Soft, smooth, clean finish. Very well balanced. Very versitile -- works well with many ale styles.
+
+Best for: American Pale Ale, Scottish Ale, Porters, Sweet Stout, Barley Wine, Alt"
+1084 Irish Ale,Wyeast,Ale,Liquid,62°F - 72°F,73.0%,Medium,"Dry diacetyl, fruity flavor characteristic of stouts. Full bodied, dry, clean flavor.
+
+Best for: Irish Dry Stouts, Porter, Scottish Ale, Brown Ale, Imperial Stout, Barley Wine"
+1087 Wyeast Ale Blend,Wyeast,Ale,Liquid,64°F - 72°F,73.0%,Medium,"Blend of ale strains designed to provide quick starts, good flavor, balance and flocculation. Balanced finish suitable for most American and British ale styles.
+
+Best for: American and British Ale Styles."
+Name,Lab,Type,Form,Temp,Attenuation,Flocculation,Notes
+1098 British Ale Yeast,Wyeast,Ale,Liquid,64°F - 72°F,74.0%,Medium,"Fruity, tart, dry crisp finish. Very well balanced.
+
+Best for: All British Ales, Pales, Bitters, English Strong Ale"
+1099 Whitbread Ale,Wyeast,Ale,Liquid,64°F - 75°F,70.0%,High,"Slightly more fruity and malty than Wyeast's British Ale. Clear and highly flocculant.
+
+Best for: Whitbread Ale, British Ales, Pales, Bitters"
+1187 Ringwood Ale,Wyeast,Ale,Liquid,64°F - 74°F,70.0%,High,"European ale yeast. Highly flocculant with complex, clear, but malty profile. Slightly fruity ester.
+
+Best for: Ringwood Ale, Brown Ales"
+1214 Belgian Ale Yeast,Wyeast,Ale,Liquid,58°F - 68°F,74.0%,Medium,"Trappist style ale yeast. Complex estery flavor.
+
+Best for: Belgian Ales, Abbey Ales, Trappist Ales"
+1272 American Ale II,Wyeast,Ale,Liquid,60°F - 72°F,74.0%,High,"Clean, tart, nutty flavor. More fruity than Wyeast American Ale yeast.
+
+Best for: All American Ales, Brown Ales, Barley Wine"
+1272 GF All American Ale,Wyeast,Ale,Liquid,60°F - 72°F,74.0%,High,"Popular all purpose American ale style now in a Gluten Free strain. Produces beers that are nutty, clean with a slight tart finish. Ferment warmer to accentuate hops and add fruitiness or ferment cold for clean light citrus character.
+
+Best for: American Amber, Brown, IPA, Pale ales and stouts. Blondes and fruit beers."
+1275 Thames Valley Ale,Wyeast,Ale,Liquid,62°F - 72°F,77.0%,Medium,"Clean, complex flavor. Low in fruit, low in esters, rich in flavor. Hops come through well.
+
+Best for: British Bitters, ESB, India Pale Ale, English Strong Ale"
+1318 London Ale III,Wyeast,Ale,Liquid,64°F - 74°F,73.0%,High,"Light, fruity flavor. Balanced flavor with hint of sweetness.
+
+Best for: British Ales, Bitters"
+1318 London Ale III 1318,Wyeast,Ale,Liquid,64°F - 74°F,73.0%,High,
+1332 Northwest Ale,Wyeast,Ale,Liquid,65°F - 75°F,69.0%,High,"Classic Northwest US ale yeast. Slight fruit flavor, malty ale with good body and balance.
+
+Best for: Oregon Ales, All American Ale styles"
+1335 British Ale II,Wyeast,Ale,Liquid,63°F - 75°F,74.5%,High,"Malty, clean, crisp finish. Dry flavor.
+
+Best for: British and Canadian Ales, English Bitters"
+Name,Lab,Type,Form,Temp,Attenuation,Flocculation,Notes
+1338 European Ale Yeast,Wyeast,Ale,Liquid,62°F - 72°F,69.0%,High,"Very malty flavor characteristic of Bavarian/Munich Ales. Complex character.
+
+Best for: European Ales, German Ales, Alts, Pale Ale, Brown Ale, Kolsch"
+1388 Belgian Strong Ale,Wyeast,Ale,Liquid,65°F - 75°F,76.0%,Low,"Dry, tart, fruity flavor. High alcohol tolerance.
+
+Best for: Belgian Ales, Scottish Strong Ale,Trappist Ales, Dubbels, Trippels"
+1450 Denny's Favorite 50,Wyeast,Ale,Liquid,60°F - 70°F,75.0%,Low,"This terrific all-round yeast can be used for almost any beer style, and is a mainstay of one of our local homebrewers, Mr. Denny Conn. It is unique in that it produces a big mouthfeel and accentuates the malt, caramel, or fruit character of a beer without being sweet or under-attenuated. 
+
+Best for: almost any style"
+1728 Scottish Ale,Wyeast,Ale,Liquid,55°F - 75°F,71.0%,High,"High alcohol tolerance.
+
+Best for: Scottish Ale, Scottish Strong Ales, Sweet Stout, Imperial Stout, Barley Wine"
+1762 Belgian Abbey II,Wyeast,Ale,Liquid,65°F - 75°F,75.0%,Medium,"Dry flavor with slight fruitiness. High alcohol tolerance.
+
+Best for: Belgian Ales, Trappist Ales, Abbey Ales, Grand Cru"
+1968 London ESB Ale,Wyeast,Ale,Liquid,64°F - 72°F,69.0%,High,"Malty, balanced flavor. Fruity, rich finish. Excellent for cask conditioned ales and bitters.
+
+Best for: English Bitters, IPA, Brown Ales, Mild Ales"
+2000 Budvar Lager,Wyeast,Lager,Liquid,46°F - 56°F,73.0%,High,"Classic pilsner lager yeast. Malty nose and subtle fruit. Rich malt profile, but dry crisp finish. Hop character accentuated by dry finish.
+
+Best for: Bohemian Pilsner, Classic Pilsners, Dortmunder and Light Lagers"
+2001 Urquell Lager,Wyeast,Lager,Liquid,48°F - 58°F,74.0%,Medium,"Pilsner Urquell yeast with mild fruit/floral aroma. Very dry and clean on palate with full mouth feel. Subtle malt character. Clean and neutral finish.
+
+Best for: Bohemian Pilsner"
+2007 Pilsen Lager,Wyeast,Lager,Liquid,48°F - 56°F,73.0%,Medium,"Classic American pilsner strain. Smooth with a malty flavor. Dry and crisp fermentation.
+
+Best for: American Pilsner, Bohemian Pilsner, Light Lagers"
+2035 American Lager,Wyeast,Lager,Liquid,48°F - 58°F,75.0%,Medium,"Bold, with a complex aroma. Good flavor depth characteristics for a wide variety of lager beers.
+
+Best for: American Lagers and Pilsners"
+2042 Danish Lager,Wyeast,Lager,Liquid,46°F - 56°F,75.0%,Medium,"Rich, Dortmund style, with a crisp, dry finish. Soft profile accentuates hop flavor.
+
+Best for: Dortmund/Export Lagers"
+Name,Lab,Type,Form,Temp,Attenuation,Flocculation,Notes
+2112 California Lager,Wyeast,Lager,Liquid,58°F - 68°F,69.0%,High,"Suited for 19th century California style beers. Lagers at high temperature and produces malty, clear beers.
+
+Best for: California common beers, Steam Beer"
+2124 Bohemian Lager,Wyeast,Lager,Liquid,48°F - 58°F,71.0%,Medium,"Ferments clean and malty, with rich malty flavor for full gravity pilsners.
+
+Best for: Bohemian Pilsners, Pilsners, German Helles, Bocks"
+2178 Wyeast Lager Blend,Wyeast,Lager,Liquid,48°F - 58°F,73.0%,Medium,"Blend of lager strains to produce a complex but clean lager flavor profile. Suitable for many common lager styles.
+
+Best for: Classic Pilsners, Lagers, Bocks."
+2206 Bavarian Lager,Wyeast,Lager,Liquid,46°F - 58°F,75.0%,Medium,"Use by many German breweries. Produces a full-bodied, rich, malty beer.
+
+Best for: German Bocks, Vienna, Oktoberfest, Hells, Marzens, Dunkel"
+2247 European Lager II,Wyeast,Lager,Liquid,46°F - 56°F,75.0%,Low,"Clean, dry flavor profile for aggressively hopped pilsners. Dry finish, mild aroma, slight sulfur production.
+
+Best for: Bohemian Pilsner, American Pilsner, Helles, Dunkel"
+2272 North American Lager,Wyeast,Lager,Liquid,48°F - 56°F,73.0%,High,"American and Canadian lager yeast. Malty finish makes it suitable for Marzens/Oktoberfest as well.
+
+Best for: American Pilsner, California Common, Canadian Lager, Oktoberfest, Marzen"
+2278 Czech Pilsner Lager,Wyeast,Lager,Liquid,50°F - 58°F,72.0%,Medium,"Classic Pilsner strain. Creates a dry but malty finish. Perfect for Pilsners and bocks. Some sulfur produced, but will fade with time.
+
+Best for: Bohemian and American Pilsner, Bocks, Oktoberfest, Marzen"
+2308 Munich Lager,Wyeast,Lager,Liquid,48°F - 56°F,75.0%,Medium,"Unique Pilsner strain. Very smooth, well-rounded and full bodied. Benefits from a diacetyl rest.
+
+Best for: Pilsners, Light Lagers, Dortmond/Export, Marzen/Oktoberfest, Dunkel"
+2565 Kolsch Yeast,Wyeast,Ale,Liquid,56°F - 64°F,75.0%,Low,"Very malty flavor with mix of lager and ale character. Crisp, clean finish.
+
+Best for: Kolsch, European Ales"
+2633 Octoberfest Lager Blend,Wyeast,Lager,Liquid,48°F - 58°F,75.0%,Low,"This blend of lager strains is designed to produce a rich, malty, complex and full bodied Octoberfest style beer. It attenuates well while leaving plenty of malt character and mouthfeel. This strain is low in sulfur production. 
+
+Best for: Octoberfest, Marzen, Bavarian lagers"
+3056 Bavarian Wheat Yeast,Wyeast,Wheat,Liquid,64°F - 74°F,75.0%,Medium,"Blend of top-fermenting ale and wheat yeasts providing a mild ester and phenolic profile.
+
+Best for: Bavarian style wheat beers."
+Name,Lab,Type,Form,Temp,Attenuation,Flocculation,Notes
+3068 Weihenstephan Weizen,Wyeast,Wheat,Liquid,64°F - 75°F,75.0%,Low,"Unique Bavarian wheat yeast that produces the spicy weizen clove and banana flavor. Best when fermented at around 68 deg F.
+
+Best for: Bavarian Weizen"
+3112 Brettanomyces Bruxellensis,Wyeast,Ale,Liquid,60°F - 75°F,67.0%,Medium,"Wild yeast strain isolated from Brussels region of Belgium. Adds classic sweaty horse hair flavor as well as sourness and cherry-pie like flavor. Generally used in conjunction with S. Cerevisiae after the primary fermentation has begun. Requires 3-6 mo
+
+Best for: Belgian Lambic, Gueze Lambic, and Sour Browns"
+3278 Belgian Lambic Blend,Wyeast,Ale,Liquid,63°F - 75°F,70.0%,Low,"Lambic culture of Saccharomyces Cerevisiar and a mixture of yeasts and bacterias. Blend of organisms helps create lactic flavor of Belgian Lambics.
+
+Best for: Belgian Lambic"
+3333 German Wheat,Wyeast,Wheat,Liquid,63°F - 75°F,73.0%,High,"Subtle flavor profile. Sharp, fruity, crisp, sherry like flavor.
+
+Best for: Bavarian Weizen"
+3463 Forbidden Fruit,Wyeast,Wheat,Liquid,63°F - 76°F,74.0%,Low,"Phenolic profile with subdued fruitiness. Available seasonally.
+
+Best for: Belgian Wit, Grand Cru"
+3522 Belgian Ardennes,Wyeast,Wheat,Liquid,65°F - 85°F,74.0%,High,"Phenolics develop at increased temperature. Mild fruitiness and complex spicy flavor.
+
+Best for: Belgian Ale"
+3638 Bavarian Wheat,Wyeast,Wheat,Liquid,64°F - 75°F,73.0%,Low,"Hefeweizen yeast with complex flavor and aroma. Bubble gum, banana flavors with apple/plub ester profile. Malty flavor.
+
+Best for: Bavarian Weizen, Hefeweizen"
+3711 French Saison,Wyeast,Ale,Liquid,65°F - 77°F,80.0%,Medium,"A very versatile strain that produces Saison or farmhouse style biers as well as other Belgian style beers that are highly aromatic (estery), peppery, spicy and citrusy. This strain enhances the use of spices and aroma hops, and is extremely attenuative b
+
+Best for: French and Belgian Saison or Farmhouse ales"
+3724 Belgian Saison,Wyeast,Ale,Liquid,70°F - 95°F,78.0%,Low,"Classic farmhouse ale yeast. Spicy, complex aromatics including bubble gum. Tart and dry on the palate with mild fruitiness. Finishes crisp and mildly acidic. Ferment at warm temperature. May have vigorous fermentation start.
+
+Best for: Belgian Saison beer"
+3763 Roselare Belgian Blend,Wyeast,Ale,Liquid,55°F - 80°F,80.0%,Medium,"Culture of Saccharomyces, Brettonomyces and Lactic Acid Bacteria. Complex aromas and flavors. May be used for primary fermentation. Primarily for sour brown and red Belgian styles.
+
+Best for: Belgian sour brown and red beers."
+3787 Trappist High Gravity,Wyeast,Wheat,Liquid,64°F - 78°F,76.0%,Medium,"Robust top cropping yeast. Phenolic character and alcohol tolerance up to 12%. Rich ester profile and malty flavor.
+
+Best for: Belgian Wit, Trappist Ale, High gravity ales"
+Name,Lab,Type,Form,Temp,Attenuation,Flocculation,Notes
+3942 Belgian Wheat Yeast,Wyeast,Wheat,Liquid,64°F - 74°F,74.0%,Medium,"Estery lor phenol yeast. Plum and apple aroma with a dry finish.
+
+Best for: Belgian Wheat, Bavarian Weizen"
+3944 Belgian Witbier,Wyeast,Wheat,Liquid,62°F - 75°F,74.0%,Medium,"Tart, slightly phenolic character. For Wits and Grand Cru. Tolerates high gravity beers well.
+
+Best for: Belgian Wit, Grand Cru"
+4335 Lactobacillus Delbrueckii,Wyeast,Ale,Liquid,60°F - 95°F,67.0%,Medium,"Lactic acid bacteria isolated from Belgium. Produces mild acidity and sourness found in many types of Belgian beers. Always used in conjunction with S. Cerevisiae and wild yeasts.
+
+Best for: Belgian gueze, lambic, sour brown ales, and Berliner Weisse."
+4733 Pediococcus Cerevisiae,Wyeast,Ale,Liquid,60°F - 95°F,67.0%,Medium,"Lactic acid bacteria isolated from Belgium. Creates a high level of lactic acidity over a long time. Often used with other yeasts, and it may take several months for flavor to fully develop.
+
+Best for: Gueze and other Belgian styles."
+5112 Brettanomyces Bruxellensis,Wyeast,Ale,Liquid,60°F - 75°F,82.0%,Medium,"This strain of wild yeast was isolated from brewery cultures in the Brussels region of Belgium. It produces the classic sweaty horse blanket character and may form a pellicle in bottles or casks. The strain is generally used in conjunction with S. cerevis
+
+Best for: Gueuze, Lambics and Sour Browns"
+5335 Lactobacillus,Wyeast,Ale,Liquid,60°F - 95°F,80.0%,Medium,"Lactic acid bacteria isolated from a Belgian brewery. This culture produces moderate levels of acidity and is commonly found in many types of beers including gueuze, lambics, sour brown ales and Berliner Weisse. It is always used in conjunction with S.cer
+
+Best for: Belgian sout beers (secondary)"
+5526 Brettanomyces Lambucus,Wyeast,Ale,Liquid,60°F - 75°F,80.0%,Very High,"This is a wild yeast strain isolated from Belgian lambic beers. It produces a pie cherry-like flavor and sourness with a distinct Brett character. A pellicle may form in bottles or casks. This strain works best in conjunction with other yeast and lactic b
+
+Best for: Lambic"
+5733 Pediococcus,Wyeast,Ale,Liquid,65°F - 95°F,80.0%,Medium,"Lactic acid bacteria used in the production of Belgian style beers where additional acidity is desirable. Often found in gueuze and other Belgian style beer. Acid production will increase with storage time. It may also cause ropiness and produce low level
+
+Best for: Belgian sour ales"
+K-97 SafAle German Ale,DCL/Fermentis,Ale,Dry,59°F - 75.2°F,73.0%,Medium,"Low sedimentation yeast, sometimes used in open fermentation. Good for wheat beers, weizens and light ales.
+
+Best for: High attenuation ales, wheat beers and weizens."
+S-04 SafAle English Ale,DCL/Fermentis,Ale,Dry,59°F - 75.2°F,73.0%,Medium,"Fast starting, fast fermenting yeast. Quick attenuation helps to produce a clean, crisp, clear ale. Can be used in a wide range of ales.
+
+Best for: Great general purpose ale yeast."
+S-189 SafLager German Lager,DCL/Fermentis,Lager,Dry,48°F - 56°F,72.5%,High,"Popular lager yeast strain. Produces wide range of continental lagers and pilsners. Clean finish.
+
+Best for: Wide range of lagers and pilsners."
+Name,Lab,Type,Form,Temp,Attenuation,Flocculation,Notes
+S-23 SafLager West European Lager,DCL/Fermentis,Lager,Dry,46°F - 50°F,73.5%,High,"German lager yeast strain. Performs well at low temperature. High flocculation and attenuation for a clean German finish.
+
+Best for: German style Lagers and Pilsners."
+S-33 SafBrew Ale,DCL/Fermentis,Ale,Dry,65°F - 72°F,73.0%,Medium,"General purpose ale yeast, widely used. Very consistent, clean finish. High attenuation and good flavor profile.
+
+Best for: Most ales."
+T-58 SafBrew Specialty Ale,DCL/Fermentis,Ale,Dry,60°F - 72°F,73.0%,Medium,"Estery, somewhat spicy ale yeast. Solid yeast formation at end of fermentation. Widely used for bottle and cask conditioning.
+
+Best for: Complex ales."
+US-05 Safale American,DCL/Fermentis,Ale,Dry,59°F - 75°F,76.5%,Medium,"American ale yeast that produces well balanced beers with low diacetyl and a very clean, crisp end palate.
+
+Best for: American ale, other clean finish ales"
+US-05 Safale American,DCL/Fermentis,Ale,Dry,59°F - 75°F,76.5%,Medium,"American ale yeast that produces well balanced beers with low diacetyl and a very clean, crisp end palate.
+
+Best for: American ale, other clean finish ales"
+US-05 Safale American,DCL/Fermentis,Ale,Dry,59°F - 75°F,76.5%,Medium,"American ale yeast that produces well balanced beers with low diacetyl and a very clean, crisp end palate.
+
+Best for: American ale, other clean finish ales"
+US-05 Safale American,DCL/Fermentis,Ale,Dry,59°F - 75°F,76.5%,Medium,"American ale yeast that produces well balanced beers with low diacetyl and a very clean, crisp end palate.
+
+Best for: American ale, other clean finish ales"
+US-05 Safale American,DCL/Fermentis,Ale,Dry,59°F - 75°F,76.5%,Medium,"American ale yeast that produces well balanced beers with low diacetyl and a very clean, crisp end palate.
+
+Best for: American ale, other clean finish ales"
+US-05 Safale American,DCL/Fermentis,Ale,Dry,59°F - 75°F,76.5%,Medium,"American ale yeast that produces well balanced beers with low diacetyl and a very clean, crisp end palate.
+
+Best for: American ale, other clean finish ales"
+US-05 Safale American,DCL/Fermentis,Ale,Dry,59°F - 75°F,76.5%,Medium,"American ale yeast that produces well balanced beers with low diacetyl and a very clean, crisp end palate.
+
+Best for: American ale, other clean finish ales"
+US-05 Safale American,DCL/Fermentis,Ale,Dry,59°F - 75°F,76.5%,Medium,"American ale yeast that produces well balanced beers with low diacetyl and a very clean, crisp end palate.
+
+Best for: American ale, other clean finish ales"
+Name,Lab,Type,Form,Temp,Attenuation,Flocculation,Notes
+W-34/70 Saflager Lager,DCL/Fermentis,Lager,Dry,48°F - 59°F,75.0%,High,"A famous yeast strain from Weihenstephan Germany used worldwide in brewing. Their most popular strain for lagers.
+
+Best for: European lagers"
+WB-06 Safbrew Wheat,DCL/Fermentis,Wheat,Dry,59°F - 75°F,68.0%,Medium,"A specialty yeast for wheat beer fermentation. The yeast produces a subtle estery and phenlol flavor typical of wheat beers.
+
+Best for: Wheat beers"
+Array Northeast Ale ECY29,East Coast Yeast,Ale,Liquid,65°F - 70°F,82.0%,High,
+ECY29 North East Ale,East Coast Yeast,Ale,Liquid,66°F - 72°F,81.0%,Medium Low,"Replication of the famous Conan strand of yeast. Unique strand with an abundance of citrusy esters that accentuate American style hops.
+
+Best for: IPA, DIPA, strong ale"
+Dry Belgian Ale,The Yeast Bay,Ale,Liquid,70°F - 76°F,92.5%,Medium Hig,"Dry Belgian Ale is single strain of Saccharomyces cerevisiae isolated from a unique golden strong ale. The profile is a complex and balanced mix of apple, pear and light citrus fruit with some mild spicy and peppery notes. The apparent attenuation of this strain ranges anywhere from 85-100%, depending upon the mash profile and the grist composition. For a yeast that's as dry as it is, it creates beers with a surprising amount of balance even without the use of specialty grains or adjuncts.
+
+Best for: Any big Belgian beer"
+Northeastern Abbey,The Yeast Bay,Ale,Liquid,68°F - 73°F,79.0%,Medium Low,"This yeast was isolated from a beer crafted by a well-known producer of Belgian-style ales in the Northeastern United States. This yeast produces a very mild spiciness and earthy flavor and aroma which is complemented by a subtle but magnificent array of fruity esters, including pear and light citrus fruit. Expect this yeast to produce a large, thick krausen.
+
+Best for: Light Belgian beers: wit, Belgian pale, Belgian blonde. Also experimental fruit beers."
+Saison Blend,The Yeast Bay,Ale,Liquid,68°F - 80°F,79.0%,Medium Low,"A blend of two unique yeast strains isolated from beers that embody the saison style, this blend is a balance of the many characteristic saison flavors and aromas. One yeast strain is a good attenuator that produces a spicy and mildly tart and tangy beer with a full mouthfeel. The other yeast strain is also a good attenuator that produces a delightful ester profile of grapefruit and orange zest and imparts a long, dry and earthy finish to the beer. Together, they produce a dry but balanced beer with a unique flavor and aroma profile.
+
+Best for: Saison"
+Vermont Ale,The Yeast Bay,Ale,Liquid,66°F - 70°F,78.5%,Medium Low,"Isolated from a uniquely crafted double IPA out of the Northeastern United States, this yeast produces a balanced fruity ester profile of peaches and light citrus that complements any aggressively hopped beer.
+
+Best for: IPAs, DIPAs"
+Vermont Ale Yeast,The Yeast Bay,Ale,Liquid,68°F - 72°F,78.5%,Low,
+Wallonian Farmhouse,The Yeast Bay,Ale,Liquid,68°F - 78°F,84.5%,Medium,"Isolated from a unique farmhouse-style ale that hails from the Walloon region of Belgium, this yeast is one of the funkiest ""clean"" yeast we have in our stable. It imparts a slight earthy funk and tart character to the beer, and is a very mild producer of some slightly spicy and mildly smokey flavor compounds. This yeast exhibits absurdly high attenuation, resulting in a practically bone-dry beer. If desired, we recommend controlling the dryness by adjusting the mash temperature or adding malts or adjuncts to the mash tun that will lend some body and residual sweetness to the beer.
+
+Best for: Farmhouse styles, experimental Belgian ales."
+- Cooper Ale,Coopers,Ale,Dry,62°F - 72°F,75.0%,Medium,"General purpose dry ale yeast with a very good reputation. Produces significant fruity flavors. No phenolics. Clean, fruity finish.
+
+Best for: Most ales."
+Name,Lab,Type,Form,Temp,Attenuation,Flocculation,Notes
+Y015 Blanche Ale Yeast,Brewferm,Wheat,Dry,64.4°F - 73.4°F,73.0%,Medium,"Top fermenting strain for Belgian witbier and wheats. Spicy and lightly phenolic.
+
+Best for: Wheat beer, Wit"
+Y016 Lager Yeast,Brewferm,Lager,Dry,50°F - 59°F,78.0%,Medium,"A dry lager yeast with high attenuation. Ferments clean and malty.
+
+Best for: Lagers"
+Belle Saison,Danstar,Ale,Liquid,64°F - 90°F,82.5%,Low,Best for: Saisons and belgians
+Belle Saison,Danstar,Ale,Dry,63°F - 77°F,80.0%,Low,Best for: Saison
+- London,Danstar,Ale,Dry,64°F - 70°F,72.0%,Medium,"Produces a clean, well balanced ale. Medium attenuation preserves some beer complexity.
+
+Best for: Well balanced British style ales."
+- Manchester,Danstar,Ale,Dry,64°F - 70°F,72.0%,Medium,"Old english style ale yeast that produces a complex, woody, full bodied ale at warm temperature. Medium attenuation. Good dry yeast for many english styles.
+
+Best for: Complex, full bodied Porters, Stouts, Ales."
+- Nottingham,Danstar,Ale,Dry,57°F - 70°F,75.0%,High,"Dry strain is highly flocculant and has high attenuation. Produces relatively few fruity esters for a dry yeast. Can be fermented at low temperature to produce lager-style beers.
+
+Best for: Good neutral ale yeast."
+- Doric Ale,Doric,Ale,Dry,62°F - 72°F,75.0%,Medium,"Good reputation. Reliable clean finish for a dry yeast.
+
+Best for: Ales"
+- Edme Ale Yeast,Edme,Ale,Dry,62°F - 72°F,75.0%,Medium,"Quick starting dry yeast with a good reputation. Produces some fruity ester. Highly attentive, so it will likely produce a slightly dry taste.
+
+Best for: Ales requiring high attenuation."
+- Special Ale,Glenbrew,Ale,Dry,62°F - 72°F,75.0%,Medium,"Highly attentive, clean finish dry yeast.
+
+Best for: All-malt beers."
+- Diamond Lager,Lallemand,Lager,Dry,50°F - 59°F,73.0%,Medium,"Diamond Lager yeast originated in Germany and is used in a number of commercial breweries to produce various lagers.
+
+Best for: Lagers"
+Name,Lab,Type,Form,Temp,Attenuation,Flocculation,Notes
+- Munuch,Lallemand,Wheat,Dry,65°F - 71°F,70.0%,Medium,"Danstar Munich Wheat Beer yeast originated in Bavaria, Germany, the home of many of the worldÃ¢â‚¬â„¢s great wheat beer breweries.
+
+Best for: Wheat beers"
+- Nottingham Yeast,Lallemand,Ale,Dry,62°F - 72°F,75.0%,Very High,"High flocculation - settles quickly. Very good reputation as a fast starter and quick fermenter. Clean and only slightly fruity. Some nutty flavor in bottled version. Relatively high attenuation.
+
+Best for: Ales"
+- Windsor Yeast,Lallemand,Ale,Dry,62°F - 72°F,75.0%,Very High,"Clean, well balanced finish. Yeast produces an estery ale with a slighly fresh yeast flavor. Not as quick as the Nottingham. Some bannana aroma.
+
+Best for: Ales"
+71B-1122 Lalvin 71B-1122,Lallemand - Lal,Wine,Dry,59°F - 86°F,75.0%,High,"Rapid starter with constant and complete fermentation. Ability to metabolize high amounts (20-40%) of malic acid. Partial metabolism of malic acid helps soften the wine. May produce significant esters, making it a good choice for concentrates. 
+
+Best for: Young wines such as nouveau, blush and sugar white."
+D-47 Lalvin D-47,Lallemand - Lal,Wine,Dry,50°F - 86°F,75.0%,High,"Recommended for white variety wines such as Chardonnay and Rose as well as Mead. Low foaming, quick fermenting, forming a compact lees at the end of fermentation. Use yeast nutrients if making mead. Saccharomyces Cerevisiae.
+
+Best for: White wines such as Chardonnay and Rose. Also good for mead."
+EC-1118 Lalvin EC-1118,Lallemand - Lal,Wine,Dry,45°F - 95°F,75.0%,High,"Low production of foam, volatile acid and H2S. Ferments over a wide temperature range. High alcohol tolerance, compact lees and good flocculation. Relatively neutral flavor and aroma.
+
+Best for: All types of wine and also cider."
+K1V-1116 Lalvin - K1V-1116,Lallemand - Lal,Wine,Dry,59°F - 86°F,75.0%,Medium,"Used for white grape varieties. Rapid starter with constant and complete fermentation. Capable of surviving difficult conditions such as low nutrient or high SO2 levels. Has low volatile action.
+
+Best for: Souvingnon Blanc, Chenin Blanc and Seyval."
+RC 212 Lalvin RC 212 (Bourgovin),Lallemand - Lal,Wine,Dry,59°F - 86°F,75.0%,Medium,"RC212 recommended for red variety wines and high gravity beers. Alcohol tolerance in the 12-14% range. Low foaming and moderate speed fermenting. Saccharomyces Cerevisiae.
+
+Best for: Red wines."
+- Munton Fison Ale,Munton-Fison,Ale,Dry,62°F - 72°F,75.0%,Medium,"Quick starting dry yeast. Produces some fuity esters. High attenuation produces clean finish.
+
+Best for: High attenuation yeast good for most ales."
+- Pasteur Champagne,Red Star,Champagne,Dry,65°F - 73°F,75.0%,Medium,"High attenuation dry yeast. Good reputation. Good for Meads and other high gravity ales.
+
+Best for: Meads, Barleywines, Imperial Stouts and high gravity ales."
+- Red Star Ale,Red Star,Ale,Dry,62°F - 72°F,77.0%,Medium,"Good general purpose dry yeast. Change to a different strain in recent years has improved overall quality.
+
+Best for: High attenuation ales with a dry clean taste."
+Name,Lab,Type,Form,Temp,Attenuation,Flocculation,Notes
+CL-0010 American Microbrewery Ale #1,Brewtek,Ale,Liquid,56°F - 72°F,74.5%,Medium,"Smooth, clean, strong fermenting ale yeast that works well at cold temperature. Clean malt flavor is ideal for cream ales.
+
+Best for: American Ales, Cream Ales"
+CL-0020 American Microbrewery Ale #2,Brewtek,Ale,Liquid,56°F - 72°F,74.0%,Medium,"Accentuated, rich, creamy malt profile. Generous amounts of diacytl. Use for low gravity beers where malt character is needed or stronger beers for a robust character.
+
+Best for: American ales"
+CL-0050 California Pub Ale,Brewtek,Ale,Liquid,60°F - 70°F,75.0%,Medium,"For that classic U.S. small brewery flavor. CL-50 produces terrific American red & pale ale styles. While attenuation is normal, this yeast produces a big, soft, well rounded malt flavor that really lets caramel malt flavors shine.
+
+Best for: California and other American ales"
+CL-0060 Noth-Eastern Micro Ale,Brewtek,Ale,Liquid,56°F - 72°F,75.0%,Medium,"Malty, bready, yet clean malt character. Leaves hops flavor and aroma intact. Versitile yeast for many American styles.
+
+Best for: American Ales, Reds, Ambers"
+CL-0110 British Microbrewery Ale,Brewtek,Ale,Liquid,62°F - 72°F,74.0%,Medium,"Complex oakey, and fruity ester profile. Slightly under-attenuated finish leaves some residual malt flavor. Suitable for low to medium gravity bitters and ales.
+
+Best for: English Bitters and Milds"
+CL-0120 British Pale Ale #1,Brewtek,Ale,Liquid,62°F - 72°F,76.0%,Medium,"Bold, citrusy character which accentuates mineral and hop flavors. Distinct character of a classic Pale Ale.
+
+Best for: British Pale Ales and Bitters."
+CL-0130 British Pale Ale #2,Brewtek,Ale,Liquid,62°F - 72°F,75.0%,Medium,"Smooth, full bodied, well roundd ale yeast. Mild esters. Strong ferementer suitable for strong or spiced ales. Accentuates caramel and malt flavors.
+
+Best for: British Pale Ale, other British Ales"
+CL-0150 British Real Ale,Brewtek,Ale,Liquid,62°F - 72°F,68.0%,Medium,"Great for real pub bitters. Has a complex, woody flavor and musty ester profile that characterizes real ale. Underattenuating to leave mild sweetness to the finish.
+
+Best for: Bitters and other English Ales"
+CL-0160 British Draft Ale,Brewtek,Ale,Liquid,62°F - 72°F,75.0%,Medium,"Full bodied, well rounded ale yeast with a touch of diacytl. Emphasizes malt character. Great for porters and bitters.
+
+Best for: Porters and Bitters."
+CL-0170 Classic British Ale,Brewtek,Ale,Liquid,62°F - 72°F,76.0%,Medium,"Complex ale with British tones and fruit like esters. Works well in high gravity ales such as scottish heavy as well.
+
+Best for: Bitters, Porters, Scottish Heavy Ales."
+CL-0200 Scottish Ale,Brewtek,Ale,Liquid,60°F - 68°F,78.5%,High,"Use for classic Scottish heavys, 90's- or strong ales. This yeast produces a soft, fruity malt profile with a subtle woody, oakey ester profile. A mild, mineral like dryness in the finish makes this a very complex strain.
+
+Best for: Scottish ales"
+Name,Lab,Type,Form,Temp,Attenuation,Flocculation,Notes
+CL-0240 Irish Dry Stout,Brewtek,Ale,Liquid,62°F - 72°F,77.0%,Medium,"Top fermenting yeast which leaves a recognizable slightly woody character to Dry Stouts. Vinous almost lactic character that blends well with roast malts. High attenuation.
+
+Best for: Dry Stouts"
+CL-0260 Canadian Ale,Brewtek,Ale,Liquid,62°F - 72°F,75.0%,Medium,"Clean, strong fermenting, well attenuated ale yeast that leaves a pleasant, fruity, complex finish.
+
+Best for: Light Canadian Ales, Bitish Bitter, Pale Ale, Porters"
+CL-0270 Australian Ale,Brewtek,Ale,Liquid,66°F - 76°F,75.0%,Medium,"Produces a malty, bready, nutty character with a pleasant honey like finish. This yeast emphasizes malt nuances and is very forgiving in warmer fermentations for those who cannot ferment under controlled conditions. 
+
+Best for: Australian styles"
+CL-0300 Belgian Ale #1,Brewtek,Ale,Liquid,62°F - 72°F,76.0%,Medium,"Produces classic Belgian ale flavor. Robust, estery with notes of clove and fruit. Ferments well in high gravity worts.
+
+Best for: Belgian Ales, High gravity ales."
+CL-0320 Belgian Ale #2,Brewtek,Ale,Liquid,62°F - 72°F,75.0%,Low,"Flanders style yeast. Strong fermenting yeast attenuates well and produces fruity, malty, estery malt profile. Slow to flocculate.
+
+Best for: Flanders style Belgian Ales, Belgian Brown, Fruit beers"
+CL-0340 Belgian Ale #3,Brewtek,Ale,Liquid,62°F - 72°F,75.0%,Medium,"Slightly more refined than CL-300. Produces the classic Trappist ale character with esters of spice and fruit. Mildly phenolic. Strong fermenting yeast.
+
+Best for: Belgian ales, Trappist Ales"
+CL-0380 Saison,Brewtek,Ale,Liquid,62°F - 72°F,75.0%,Medium,"Pleasant yeast blend. Leaves a smooth full character to the malt with mild, but pleasant esters and some apple pie spices.
+
+Best for: French or Belgian Ales and Grand Cru styles."
+CL-0400 Old German Ale,Brewtek,Ale,Liquid,62°F - 72°F,76.0%,Medium,"Traditional Alt Bier flavor. Strong fermenter with a smooth, attenuated, mild flavor. Slightly dry, clean, quenching finish.
+
+Best for: Altbier, German ales, some Wheat beers."
+CL-0450 Kolsch,Brewtek,Ale,Liquid,62°F - 72°F,76.5%,Medium,"Produces mild sulfer flavor which smooths with time to a clean attenuated flavor. Mineral and malt characters come through well. Clean, lightly yeasty flavor and aroma in the finish.
+
+Best for: German Kolsch"
+CL-0600 Original Pilsner,Brewtek,Lager,Liquid,48°F - 58°F,75.5%,Medium,"Full bodied lager yeast with sweet, underattenuated finish. Subdued diacetyl character. Big malty palatte. Classic Pilsner finish and style.
+
+Best for: Classic Czech Pilsners"
+CL-0620 American Megabrewery,Brewtek,Lager,Liquid,48°F - 58°F,75.0%,Medium,"Smooth yeast with a slight fruity flavor. Lagers into a smooth, clean tasting beer. Use for light, clean lager styles with unobtrusive yeast character.
+
+Best for: Light, Clean American style lagers."
+Name,Lab,Type,Form,Temp,Attenuation,Flocculation,Notes
+CL-0630 American Microbrewery Lager,Brewtek,Lager,Liquid,48°F - 58°F,75.0%,Medium,"Strong fermenter. Leaves a clean, full flavored, malty finish. Slightly attenuative. Versatile for most lager styles with a clean full flavor.
+
+Best for: All lager styles"
+CL-0650 Old Bavarian Lager,Brewtek,Lager,Liquid,48°F - 58°F,75.0%,Medium,"Well rounded, malty with a subtle ester complex and citrus flavors. Distinct, flavorful yeast is great for Southern German lager styles.
+
+Best for: German lagers, Bock, Dunkel, Helles"
+CL-0660 Northern German Lager,Brewtek,Lager,Liquid,48°F - 58°F,75.0%,Medium,"Clean, crisp, traditional lager character. Strong fermenting and forgiving yeast. Excellent general purpose lager yeast.
+
+Best for: German pilsners, Mexican and Canadian Lagers"
+CL-0670 Swiss Lager,Brewtek,Lager,Liquid,48°F - 54°F,75.0%,Medium,"A unique strain that has both a clean, crisp lager flavor and a soft, smooth maltiness. Perfect for European Pilsners. Like our CL-660 strain, this is an excellent all purpose Lager yeast for those wanting a fuller, rounder palate. 
+
+Best for: European pilsners and lagers"
+CL-0680 East European Lager,Brewtek,Lager,Liquid,48°F - 58°F,76.5%,Medium,"Smooth, rich, creamy character. Emphasizes big malt flavor and clean finish. Full but smooth malt character.
+
+Best for: Marzens, Oktoberfest"
+CL-0690 California Esteem (Gold),Brewtek,Lager,Liquid,48°F - 65°F,75.0%,Medium,"Use for California Common Beers (aka Steam Beer). Leaves a slightly estery, well attenuated finish. Quite distinct in flavor. Can also be used for complex porters.
+
+Best for: California Common Beer, American or Robust porters"
+CL-0900 Belgian Wheat,Brewtek,Wheat,Liquid,55°F - 68°F,73.0%,Medium,"Top fermenting yeast with a soft bread-like character. Leaves a sweet, mildly estery finish. Delicious Belgian character to any beer. Great in Wit style with coriander and bitter orange peel.
+
+Best for: Belgian Pils, Belgian Wit"
+CL-0920 German Wheat BT,Brewtek,Wheat,Liquid,55°F - 68°F,76.0%,Medium,"Top fermenting Weizenbier yeast. Intensely spicy, clovey and phenolic. High attenuation.
+
+Best for: Weizen, Weizenbocks"
+CL-0930 German Weiss,Brewtek,Wheat,Liquid,55°F - 68°F,75.0%,Medium,"Milder than German Wheat #1, this strain still produces the desired clove and phenol character, but to a lesser degree. Full, earthy character.
+
+Best for: Weiss, Weizen, other Southern German Wheat styles"
+CL-0980 American White Ale,Brewtek,Wheat,Liquid,55°F - 68°F,75.0%,Low,"Smooth wheat yeast with a round, clean, malt flavor. Low flocculation leaves cloudy Hefe-Weizen finish. Smooth flavor makes a great unfiltered wheat beer.
+
+Best for: Hefe-Weizen, American Wheat"
+CL-5200 Brettanomyces Lambicus,Brewtek,Ale,Liquid,48°F - 68°F,73.0%,Medium,"Wild yeast strain associated with Belgian breweries. Contributes horsey, old leather flavor complex to Belgian lambics. Slow growing yeast that takes weeks to ferment and months to develop fully.
+
+Best for: Belgian Lambic beers"
+Name,Lab,Type,Form,Temp,Attenuation,Flocculation,Notes
+CL-5600 Pediococcus Damnosus,Brewtek,Ale,Liquid,48°F - 68°F,73.0%,Medium,"Slow growing bacteria used in secondary to create lactic acid flavor in Belgian lambics. Produces large amounts of lactic acid and diacytl. Prefers anaerobic conditions.
+
+Best for: Belgian Lambic beers"
