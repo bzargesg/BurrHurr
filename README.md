@@ -8,6 +8,9 @@ A recipe calculator for homebrewing
 ![Highlighting Fermentables](https://media.giphy.com/media/VIDbBG4eSQ9QRVfEJF/giphy.gif)
 ![Changing Fermentable Quantity](https://media.giphy.com/media/XE6g8VNgRrXfhzOWLE/giphy.gif)
 
+## Current Todo's
+* refactor into (render pattern)[https://reactjs.org/docs/render-props.html]
+* refactor state into (react-redux)[https://react-redux.js.org/]
 ## Getting Started
 
 * npm run react-dev
