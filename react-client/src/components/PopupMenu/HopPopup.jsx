@@ -1,6 +1,6 @@
 import React from 'react';
 import HopListItem from './HopListItem.jsx';
-import { ListTable, ListTableHeader } from '../../Styled/styledComps.jsx';
+import { ListTable, ListTableHeader } from '../Styled/styledComps.jsx';
 import { Button, ButtonToolbar, Form } from 'react-bootstrap';
 class HopPopup extends React.Component {
   constructor(props) {

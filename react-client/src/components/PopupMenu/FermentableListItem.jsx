@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   Ltd
-} from '../../Styled/styledComps.jsx';
+} from '../Styled/styledComps.jsx';
 class FermentableListItem extends React.Component {
   constructor(props){
     super(props);

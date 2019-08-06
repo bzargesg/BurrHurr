@@ -1,6 +1,6 @@
 import React from 'react';
 import FermentableListItem from './FermentableListItem.jsx';
-import { ListTable, ListTableHeader } from '../../Styled/styledComps.jsx';
+import { ListTable, ListTableHeader } from '../Styled/styledComps.jsx';
 import { Button, ButtonToolbar, Form } from 'react-bootstrap';
 class FermentablePopup extends React.Component {
   constructor(props) {

@@ -1,6 +1,6 @@
 import React from 'react';
 import ListItem from '../listItems/ListItem.jsx';
-import {ListWrapper} from '../../Styled/styledComps.jsx';
+import {ListWrapper} from '../Styled/styledComps.jsx';
 const Style = (props) => (
   <div>
     <ListWrapper>
