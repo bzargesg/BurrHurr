@@ -1,6 +1,5 @@
 //TODO: this should be the body component combining the other components replacing the junk in index
 import React from 'react';
-import ReactDOM from 'react-dom';
 // import Popup from 'reactjs-popup';
 import fermentableHelper from '../helperfunctions/fermentablesCalc';
 import Fermentables from '../beerComponents/Fermentables.jsx';
@@ -14,6 +13,9 @@ import { Container, Row, Col, Form } from 'react-bootstrap';
 import { BodyWrapp } from '../Styled/styledComps.jsx';
 import FermentablePopup from '../PopupMenu/FermentablePopup.jsx';
 import HopPopup from '../PopupMenu/HopPopup.jsx';
+
+import VolumeTester from './volumeTester.jsx';
+
 export default class Body extends React.Component {
   constructor(props) {
     super(props);
@@ -24,7 +26,6 @@ export default class Body extends React.Component {
       ABV: 0,
       yeasts: [],
       kettle: [],
-      yeasts: [],
       styles: [],
       totalGrain: 0,
       fermentables: {},
@@ -32,7 +33,6 @@ export default class Body extends React.Component {
       buttonClick: false,
       numberGrain: 1,
       numberHop: 1,
-      totalGrain: 0,
       totalGravity: 0,
       finalGravity: 0,
       colorStyle: {backgroundColor: 'RGB(249,233,173)', height: '100px', width: '100px'}
@@ -101,7 +101,7 @@ export default class Body extends React.Component {
       totalGrain: fermentableHelper.totalGrain(this.state.fermentables),
       color: newColor,
       totalGravity: newGrav,
-      finalGravity: newGrav * (1-.75),
+      finalGravity: newGrav * (.25),
       ABV: fermentableHelper.abv(newGrav),
       colorStyle: this.beerColor(newColor)
     });
