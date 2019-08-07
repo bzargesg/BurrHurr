@@ -14,7 +14,7 @@ import { BodyWrapp } from '../Styled/styledComps.jsx';
 import FermentablePopup from '../PopupMenu/FermentablePopup.jsx';
 import HopPopup from '../PopupMenu/HopPopup.jsx';
 
-import VolumeTester from './volumeTester.jsx';
+import FermentablesHeaderContainer from '../../redux/containerComponents/FermentablesHeaderContainer'
 
 export default class Body extends React.Component {
   constructor(props) {
@@ -163,15 +163,7 @@ export default class Body extends React.Component {
       <div>
         <BodyWrapp>
           <h1>BurrHurr</h1>
-          <Row className="headerBar">
-            <Col className="totalGrain">Total Grain:{this.state.totalGrain + 'lb'}</Col>
-            <Col className="totalGravity">Total Grav.:{(this.state.totalGravity).toFixed(2)}</Col>
-            <Col className="finalGravity">Final Grav.:{(this.state.finalGravity).toFixed(2)}</Col>
-            <Col className="volume">Volume:<Form.Control type="amount" size="sm" placeholder="5 gallons" onChange={this.volumeChange.bind(this)}/></Col>
-            <Col className="color"><div style={this.state.colorStyle}></div>Color: {this.state.color}</Col>
-            <Col className="ibu">IBU: {this.state.IBU}</Col>
-            <Col className="abv">ABV: {(this.state.ABV).toFixed(3)}</Col>
-          </Row>
+          <FermentablesHeaderContainer />
           <Fermentables
             fermentables={this.state.fermentables}
             amountChange={this.fermAmountChange}
