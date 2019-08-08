@@ -3,15 +3,14 @@ import { volumeChange } from '../actionCreators';
 import { connect } from 'react-redux';
 
 const mapStateToProps = (state) =>{
-  console.log(state)
   return {
-    volume: state.calcReducer.volume,
-    totalGrain: state.fermReducer.totalGrain,
-    totalGravity: state.fermReducer.totalGravity,
-    finalGravity: state.fermReducer.totalGravity * .25,
-    colorStyle: state.fermReducer.color,
-    IBU: state.hopReducer.IBU,
-    ABV: state.fermReducer.ABV
+    volume: state.calculations.volume,
+    totalGrain: state.fermentation.totalGrain,
+    totalGravity: state.fermentation.totalGravity,
+    finalGravity: state.fermentation.totalGravity * .25,
+    colorStyle: state.fermentation.colorStyle,
+    IBU: state.hops.IBU,
+    ABV: state.fermentation.ABV
   }
 }
 const mapDispatchToProps = dispatch => ({
