@@ -183,7 +183,7 @@ export default class Body extends React.Component {
               </Col>
             </Row>
           </Container>
-          <Modal
+          {/* <Modal
             show={this.state.buttonClick}
             onHide={this.handleClose}
             size="lg"
@@ -199,7 +199,7 @@ export default class Body extends React.Component {
                 Close
               </Button>
             </Modal.Footer>
-          </Modal>
+          </Modal> */}
           <hr></hr>
            <Hops
             hops={this.state.hops}
