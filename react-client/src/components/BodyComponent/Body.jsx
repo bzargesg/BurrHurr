@@ -4,15 +4,11 @@ import React from 'react';
 import fermentableHelper from '../helperfunctions/fermentablesCalc';
 import Fermentables from '../beerComponents/Fermentables.jsx';
 import Hops from '../beerComponents/Hops.jsx';
-import Yeast from '../beerComponents/Yeast.jsx';
-import Kettle from '../beerComponents/Kettle.jsx';
-import Style from '../beerComponents/Style.jsx';
-import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import { Container, Row, Col, Form } from 'react-bootstrap';
 import { BodyWrapp } from '../Styled/styledComps.jsx';
-import FermentablePopup from '../PopupMenu/FermentablePopup.jsx';
-import HopPopup from '../PopupMenu/HopPopup.jsx';
+import FermentableModalContainer from '../../redux/containerComponents/fermentableModalContainer.js'
+
 
 import FermentablesHeaderContainer from '../../redux/containerComponents/FermentablesHeaderContainer'
 
@@ -39,7 +35,6 @@ export default class Body extends React.Component {
     };
     this.fermClickHandler = this.fermClickHandler.bind(this);
     this.addFermentableFromModal = this.addFermentableFromModal.bind(this);
-    this.handleClose = this.handleClose.bind(this);
     this.fermAmountChange = this.fermAmountChange.bind(this);
     this.hopClickHandler = this.hopClickHandler.bind(this);
     this.hopAmountChange = this.hopAmountChange.bind(this);
@@ -183,23 +178,7 @@ export default class Body extends React.Component {
               </Col>
             </Row>
           </Container>
-          {/* <Modal
-            show={this.state.buttonClick}
-            onHide={this.handleClose}
-            size="lg"
-          >
-            <Modal.Header closeButton>
-              <Modal.Title>Fermentables</Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-              <FermentablePopup addFerm={this.addFermentableFromModal} />
-            </Modal.Body>
-            <Modal.Footer>
-              <Button variant="secondary" onClick={this.handleClose}>
-                Close
-              </Button>
-            </Modal.Footer>
-          </Modal> */}
+          <FermentableModalContainer />
           <hr></hr>
            <Hops
             hops={this.state.hops}
@@ -220,33 +199,9 @@ export default class Body extends React.Component {
               </Col>
             </Row>
           </Container>
-          {/* <Modal
-            show={this.state.buttonClick}
-            onHide={this.handleClose}
-            size="lg"
-          >
-            <Modal.Header closeButton>
-              <Modal.Title>Hops</Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-              <HopPopup addHop={this.addHopFromModal} />
-            </Modal.Body>
-            <Modal.Footer>
-              <Button variant="secondary" onClick={this.handleClose}>
-                Close
-              </Button>
-            </Modal.Footer>
-          </Modal> */}
-           {/*
-      <Yeast/>
-      <Kettle/>
-      <Style/> */}
         </BodyWrapp>
       </div>
     );
-  }
-  handleClose() {
-    this.setState({ buttonClick: false });
   }
   clickHandler(e) {
     this.setState({ buttonClick: !this.state.buttonClick });

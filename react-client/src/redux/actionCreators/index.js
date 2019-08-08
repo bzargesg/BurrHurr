@@ -20,3 +20,9 @@ export const volumeChange = vol =>({
   type: 'CHANGE_VOL',
   vol
 })
+export const fermModalChange = () => ({
+  type: 'CHANGE_FERM_MODAL'
+})
+export const hopModalChange = () => ({
+  type: 'CHANGE_HOP_MODAL'
+})

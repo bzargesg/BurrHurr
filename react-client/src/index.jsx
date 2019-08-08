@@ -7,7 +7,9 @@ import { createStore } from 'redux';
 import RootReducer from './redux/reducers/';
 import initialState from './redux/store/initialState.js'
 
-const store = createStore(RootReducer, initialState);
+const store = createStore(RootReducer, initialState,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  );
 function App() {
 
     return (

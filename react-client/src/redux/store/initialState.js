@@ -14,6 +14,10 @@ module.exports = initialState = {
         numberHop: 1,
         IBU: 0,
     },
+    modalClick: {
+        fermentableModalClick: false,
+        hopModalClick: false,
+    }
     // buttonClick: false,
     // yeasts: [],
     // kettle: [],
