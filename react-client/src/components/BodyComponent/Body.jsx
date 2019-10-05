@@ -34,7 +34,7 @@ export default class Body extends React.Component {
       colorStyle: {backgroundColor: 'RGB(249,233,173)', height: '100px', width: '100px'}
     };
     this.fermClickHandler = this.fermClickHandler.bind(this);
-    this.addFermentableFromModal = this.addFermentableFromModal.bind(this);
+    // this.addFermentableFromModal = this.addFermentableFromModal.bind(this);
     this.fermAmountChange = this.fermAmountChange.bind(this);
     this.hopClickHandler = this.hopClickHandler.bind(this);
     this.hopAmountChange = this.hopAmountChange.bind(this);
@@ -106,42 +106,7 @@ export default class Body extends React.Component {
     //abv total
     //total grain
   }
-  fermObjectCleanup(obj, grainNumber) {
-    let returnObj = {};
-    returnObj.number = grainNumber;
-    returnObj.name = obj.name;
-    returnObj.amount = 1;
-    returnObj.color = obj.color;
-    returnObj.gravity = obj.gravity_potential;
-    returnObj.abv = '5%';
-    returnObj.percentage = '5%';
-    return returnObj;
-  }
-  addFermentableFromModal(fermList) {
-    let newFermList = this.state.fermentables;
-    let numberGrain = this.state.numberGrain;
-    Object.keys(fermList).forEach(objectId => {
-      if (!newFermList[objectId]) {
-        newFermList[objectId] = this.fermObjectCleanup(
-          fermList[objectId],
-          numberGrain
-        );
-      }
-      numberGrain++;
-    });
-    let newGrav = fermentableHelper.gravity(this.state.fermentables,this.state.volume);
-    let newColor = fermentableHelper.color(this.state.fermentables, this.state.volume);
-    this.setState({
-      fermentables: newFermList,
-      numberGrain: numberGrain,
-      totalGrain: fermentableHelper.totalGrain(this.state.fermentables),
-      color: newColor,
-      totalGravity: newGrav,
-      finalGravity: newGrav * (1-.75),
-      ABV: fermentableHelper.abv(newGrav),
-      colorStyle: this.beerColor(newColor)
-    });
-  }
+  
   fermClickHandler(e) {
     this.setState({ fermclick: true });
   }
@@ -208,3 +173,39 @@ export default class Body extends React.Component {
   }
 }
 
+// fermObjectCleanup(obj, grainNumber) {
+  //   let returnObj = {};
+  //   returnObj.number = grainNumber;
+  //   returnObj.name = obj.name;
+  //   returnObj.amount = 1;
+  //   returnObj.color = obj.color;
+  //   returnObj.gravity = obj.gravity_potential;
+  //   returnObj.abv = '5%';
+  //   returnObj.percentage = '5%';
+  //   return returnObj;
+  // }
+  // addFermentableFromModal(fermList) {
+  //   let newFermList = this.state.fermentables;
+  //   let numberGrain = this.state.numberGrain;
+  //   Object.keys(fermList).forEach(objectId => {
+  //     if (!newFermList[objectId]) {
+  //       newFermList[objectId] = this.fermObjectCleanup(
+  //         fermList[objectId],
+  //         numberGrain
+  //       );
+  //     }
+  //     numberGrain++;
+  //   });
+  //   let newGrav = fermentableHelper.gravity(this.state.fermentables,this.state.volume);
+  //   let newColor = fermentableHelper.color(this.state.fermentables, this.state.volume);
+  //   this.setState({
+  //     fermentables: newFermList,
+  //     numberGrain: numberGrain,
+  //     totalGrain: fermentableHelper.totalGrain(this.state.fermentables),
+  //     color: newColor,
+  //     totalGravity: newGrav,
+  //     finalGravity: newGrav * (1-.75),
+  //     ABV: fermentableHelper.abv(newGrav),
+  //     colorStyle: this.beerColor(newColor)
+  //   });
+  // }
